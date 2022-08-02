@@ -1,0 +1,641 @@
+
+.MainPageWithAccount_MainPageWithAccount {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	margin: auto;
+	width: 100%;
+	height: 100vh;
+	overflow: auto;
+	background: rgba(0,0,0,1.00);
+}
+.MainPageWithAccount_MainPageWithAccount .Rectangle39 {
+	position: absolute;
+	left: 13.68px;
+	top: 97.28px;
+	width: 697.6800000000001px;
+	height: 706.8px;
+	background: rgba(0,104,213,1.00);
+	border-radius: 34.2px;
+}
+.MainPageWithAccount_MainPageWithAccount .Rectangle40 {
+	position: absolute;
+	left: 728.08px;
+	top: 97.28px;
+	width: 701.48px;
+	height: 706.8px;
+	background: rgba(76,120,168,1.00);
+	border-radius: 28.88px;
+}
+.MainPageWithAccount_MainPageWithAccount .Recommendedforyou {
+	position: absolute;
+	left: 901.36px;
+	top: 110.96000000000001px;
+	width: 383.04px;
+	height: 65.36px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(255,255,255,1.00);
+	font-family: Inter;
+	font-size: 27.36px;
+	font-weight: 400;
+	line-height: 32.0625px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 {
+	position: absolute;
+	left: 0px;
+	top: 130.72px;
+	width: 1441.72px;
+	height: 714.4px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Target {
+	position: absolute;
+	left: 1104.28px;
+	top: 346.56px;
+	width: 310.08px;
+	height: 264.48px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Target .Rectangle37 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 310.08px;
+	height: 264.48px;
+	background: rgba(137,243,226,1.00);
+	border-radius: 29.64px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Target .iconstarempty {
+	position: absolute;
+	left: 254.70576171875px;
+	top: 181.950234375px;
+	width: 49.79373046875px;
+	height: 40.093873291015626px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Target .iconstarempty .Vector {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Target .Target_1 {
+	position: absolute;
+	left: 51.68px;
+	top: 164.16px;
+	width: 206.72px;
+	height: 53.2px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(0,0,0,1.00);
+	font-family: Inter;
+	font-size: 27.36px;
+	font-weight: 400;
+	line-height: 32.0625px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Target .Target21 {
+	position: absolute;
+	left: 95.76px;
+	top: 25.84px;
+	width: 139.08px;
+	height: 106.4px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Walmart {
+	position: absolute;
+	left: 47.88px;
+	top: 335.16px;
+	width: 310.08px;
+	height: 264.48px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Walmart .Rectangle37_1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 310.08px;
+	height: 264.48px;
+	background: rgba(137,243,226,1.00);
+	border-radius: 29.64px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Walmart .Walmart_1 {
+	position: absolute;
+	left: 47.88px;
+	top: 175.56px;
+	width: 206.72px;
+	height: 53.2px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(0,0,0,1.00);
+	font-family: Inter;
+	font-size: 27.36px;
+	font-weight: 400;
+	line-height: 32.0625px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Walmart .Walmart1 {
+	position: absolute;
+	left: 85.12px;
+	top: 41.04px;
+	width: 131.48px;
+	height: 113.24px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Walmart .BestRate42 {
+	position: absolute;
+	left: 53.2px;
+	top: 229.52px;
+	width: 203.68px;
+	height: 34.96px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(0,63,6,1.00);
+	font-family: Inter;
+	font-size: 27.36px;
+	font-weight: 400;
+	line-height: 32.0625px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Hotels {
+	position: absolute;
+	left: 392.16px;
+	top: 346.56px;
+	width: 310.08px;
+	height: 264.48px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Hotels .Rectangle36 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 310.08px;
+	height: 264.48px;
+	background: rgba(137,243,226,1.00);
+	border-radius: 29.64px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Hotels .BestRate3 {
+	position: absolute;
+	left: 54.72px;
+	top: 218.12px;
+	width: 203.68px;
+	height: 34.96px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(0,63,6,1.00);
+	font-family: Inter;
+	font-size: 27.36px;
+	font-weight: 400;
+	line-height: 32.0625px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Hotels .Hotelscom {
+	position: absolute;
+	left: 47.12px;
+	top: 164.16px;
+	width: 206.72px;
+	height: 53.2px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(0,0,0,1.00);
+	font-family: Inter;
+	font-size: 27.36px;
+	font-weight: 400;
+	line-height: 32.0625px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Hotels .Hotels1 {
+	position: absolute;
+	left: 83.6px;
+	top: 29.64px;
+	width: 133px;
+	height: 113.24px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Kohls {
+	position: absolute;
+	left: 747.84px;
+	top: 346.56px;
+	width: 310.08px;
+	height: 264.48px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Kohls .Rectangle38 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 310.08px;
+	height: 264.48px;
+	background: rgba(137,243,226,1.00);
+	border-radius: 29.64px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Kohls .iconstarempty_1 {
+	position: absolute;
+	left: 241.14005859375px;
+	top: 181.950234375px;
+	width: 49.79373046875px;
+	height: 40.093873291015626px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Kohls .iconstarempty_1 .Vector_1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Kohls .Kohls_1 {
+	position: absolute;
+	left: 44.08px;
+	top: 164.16px;
+	width: 206.72px;
+	height: 53.2px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(0,0,0,1.00);
+	font-family: Inter;
+	font-size: 27.36px;
+	font-weight: 400;
+	line-height: 32.0625px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Kohls .KholsLogo1 {
+	position: absolute;
+	left: 84.36px;
+	top: 29.64px;
+	width: 144.4px;
+	height: 113.24px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Gap {
+	position: absolute;
+	left: 387.6px;
+	top: 45.6px;
+	width: 310.08px;
+	height: 264.48px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Gap .Rectangle32 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 310.08px;
+	height: 264.48px;
+	background: rgba(137,243,226,1.00);
+	border-radius: 29.64px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Gap .BestRate2 {
+	position: absolute;
+	left: 59.28px;
+	top: 212.8px;
+	width: 203.68px;
+	height: 34.96px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(0,63,6,1.00);
+	font-family: Inter;
+	font-size: 27.36px;
+	font-weight: 400;
+	line-height: 32.0625px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Gap .Gap_1 {
+	position: absolute;
+	left: 56.24px;
+	top: 153.52px;
+	width: 206.72px;
+	height: 53.2px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(0,0,0,1.00);
+	font-family: Inter;
+	font-size: 27.36px;
+	font-weight: 400;
+	line-height: 32.0625px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Gap .GapLogo1 {
+	position: absolute;
+	left: 88.16px;
+	top: 21.28px;
+	width: 133px;
+	height: 106.4px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Amazon {
+	position: absolute;
+	left: 47.88px;
+	top: 45.6px;
+	width: 310.08px;
+	height: 264.48px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Amazon .Rectangle31 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 310.08px;
+	height: 264.48px;
+	background: rgba(137,243,226,1.00);
+	border-radius: 29.64px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Amazon .BestRate5 {
+	position: absolute;
+	left: 66.12px;
+	top: 212.8px;
+	width: 203.68px;
+	height: 34.96px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(0,63,6,1.00);
+	font-family: Inter;
+	font-size: 27.36px;
+	font-weight: 400;
+	line-height: 32.0625px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Amazon .Amazon_1 {
+	position: absolute;
+	left: 51.68px;
+	top: 153.52px;
+	width: 206.72px;
+	height: 53.2px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(0,0,0,1.00);
+	font-family: Inter;
+	font-size: 27.36px;
+	font-weight: 400;
+	line-height: 32.0625px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Amazon .Amazon1 {
+	position: absolute;
+	left: 88.16px;
+	top: 21.28px;
+	width: 133px;
+	height: 110.96000000000001px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Costco {
+	position: absolute;
+	left: 747.84px;
+	top: 45.6px;
+	width: 310.08px;
+	height: 264.48px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Costco .Rectangle33 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 310.08px;
+	height: 264.48px;
+	background: rgba(137,243,226,1.00);
+	border-radius: 29.64px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Costco .iconstarempty_2 {
+	position: absolute;
+	left: 241.14005859375px;
+	top: 185.48652587890626px;
+	width: 49.79373046875px;
+	height: 40.09387908935547px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Costco .iconstarempty_2 .Vector_2 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Costco .Costco_1 {
+	position: absolute;
+	left: 51.68px;
+	top: 153.52px;
+	width: 206.72px;
+	height: 53.2px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(0,0,0,1.00);
+	font-family: Inter;
+	font-size: 27.36px;
+	font-weight: 400;
+	line-height: 32.0625px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .Costco .Costco1 {
+	position: absolute;
+	left: 89.68px;
+	top: 21.28px;
+	width: 139.08px;
+	height: 110.96000000000001px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .HomeDepot {
+	position: absolute;
+	left: 1104.28px;
+	top: 45.6px;
+	width: 310.08px;
+	height: 264.48px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .HomeDepot .Rectangle34 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 310.08px;
+	height: 264.48px;
+	background: rgba(137,243,226,1.00);
+	border-radius: 29.64px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .HomeDepot .iconstarempty_3 {
+	position: absolute;
+	left: 254.70576171875px;
+	top: 185.48652587890626px;
+	width: 49.79373046875px;
+	height: 40.09387908935547px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .HomeDepot .iconstarempty_3 .Vector_3 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .HomeDepot .HomeDepot_1 {
+	position: absolute;
+	left: 62.32px;
+	top: 153.52px;
+	width: 206.72px;
+	height: 53.2px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(0,0,0,1.00);
+	font-family: Inter;
+	font-size: 27.36px;
+	font-weight: 400;
+	line-height: 32.0625px;
+}
+.MainPageWithAccount_MainPageWithAccount .Frame1 .HomeDepot .HomeDepot1 {
+	position: absolute;
+	left: 94.24px;
+	top: 21.28px;
+	width: 142.88px;
+	height: 110.96000000000001px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.MainPageWithAccount_MainPageWithAccount .YourFavorites {
+	position: absolute;
+	left: 199.12px;
+	top: 106.4px;
+	width: 351.12px;
+	height: 62.32px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(255,255,255,1.00);
+	font-family: Inter;
+	font-size: 27.36px;
+	font-weight: 400;
+	line-height: 32.0625px;
+}
+.MainPageWithAccount_MainPageWithAccount .Rectangle19 {
+	position: absolute;
+	left: 38%;
+	top: 0px;
+	transform: translate(-50%, 0);
+	width: 1444px;
+	height: 76px;
+}
+.MainPageWithAccount_MainPageWithAccount .MenuIcon {
+	position: absolute;
+	margin-left: 1851px;
+	margin-right: 19px;
+	width: 22.8px;
+	height: 22.8px;
+}
+.MainPageWithAccount_MainPageWithAccount .MenuIcon .Line1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 0%;
+	border: 1px solid rgba(255,255,255,1);
+}
+.MainPageWithAccount_MainPageWithAccount .MenuIcon .Line2 {
+	position: absolute;
+	left: 0px;
+	top: 11.4px;
+	width: 100%;
+	height: 0%;
+	border: 1px solid rgba(255,255,255,1);
+}
+.MainPageWithAccount_MainPageWithAccount .MenuIcon .Line3 {
+	position: absolute;
+	left: 0px;
+	top: 22.8px;
+	width: 100%;
+	height: 0%;
+	border: 1px solid rgba(255,255,255,1);
+}
+.MainPageWithAccount_MainPageWithAccount .TSP3 {
+	position: absolute;
+	left: 17.48px;
+	top: 5.32px;
+	width: 164.92000000000002px;
+	height: 65.36px;
+	object-fit: cover;
+	overflow: hidden;
+	border-radius: 60.04px;
+}
+.MainPageWithAccount_MainPageWithAccount .Group4 {
+	position: absolute;
+	left: 1102px;
+	top: 15.96px;
+	width: 279.68px;
+	height: 44.08px;
+}
+.MainPageWithAccount_MainPageWithAccount .Group4 .Rectangle21 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(20,135,255,1.00);
+	border-radius: 22.8px;
+	border: 1px solid rgba(174.25000101327896,161.90729051828384,161.90729051828384,1);
+	box-sizing: border-box;
+}
+.MainPageWithAccount_MainPageWithAccount .Group4 .USERNAME {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	color: rgba(255,255,255,1.00);
+	font-family: Microsoft JhengHei UI;
+	font-size: 18.240000000000002px;
+	font-weight: 700;
+	line-height: 21.375px;
+}
+.MainPageWithAccount_MainPageWithAccount .Group4 ._ {
+	position: absolute;
+	left: 122.36px;
+	top: 3.04px;
+	width: 50%;
+	height: 86.20689655172413%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	color: rgba(255,255,255,1.00);
+	font-family: Inter;
+	font-size: 18.240000000000002px;
+	font-weight: 400;
+	line-height: 21.375px;
+}
+.MainPageWithAccount_MainPageWithAccount .SearchBarDesktop {
+	position: absolute;
+	left: 199.12px;
+	top: 19.76px;
+	width: 872.48px;
+	height: 37.24px;
+	border-radius: 22.8px;
+}
+.MainPageWithAccount_MainPageWithAccount .SearchBarDesktop .Rectangle1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,254,254,1.00);
+	border-radius: 22.8px;
+	border: 1px solid rgba(174.25000101327896,161.90729051828384,161.90729051828384,1);
+	box-sizing: border-box;
+}
+.MainPageWithAccount_MainPageWithAccount .SearchBarDesktop .Vector_4 {
+	position: absolute;
+	left: 840.5600000000001px;
+	top: 8.36px;
+	width: 2.5261324041811846%;
+	height: 57.14285714285714%;
+}
+.MainPageWithAccount_MainPageWithAccount .FilterDropdownListDesktop {
+	position: absolute;
+	left: 215.84px;
+	top: 27.36px;
+	width: 21.28px;
+	height: 22.04px;
+}
+.MainPageWithAccount_MainPageWithAccount .FilterDropdownListDesktop .Vector_5 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}

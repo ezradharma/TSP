@@ -1,0 +1,211 @@
+
+.SearchWalmart_SearchWalmart {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	margin: auto;
+	width: 100%;
+	height: 100vh;
+	overflow: auto;
+	background: rgba(0,0,0,1.00);
+}
+.SearchWalmart_SearchWalmart .SearchBarRateBoxDesktop {
+	position: absolute;
+	left: 430.16px;
+	top: 145.16px;
+	width: 583.6800000000001px;
+	height: 124.64px;
+	border: 1px solid rgba(0,0,0,1);
+}
+.SearchWalmart_SearchWalmart .SearchBarRateBoxDesktop .Rectangle2 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+.SearchWalmart_SearchWalmart .SearchBarRateBoxDesktop .Walmart {
+	position: absolute;
+	left: 228.76px;
+	top: 38.76px;
+	width: 24.739583333333336%;
+	height: 27.439024390243905%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(99,95,95,1.00);
+	font-family: Inter;
+	font-size: 24.32px;
+	font-weight: 700;
+	line-height: 28.5px;
+}
+.SearchWalmart_SearchWalmart .SearchBarRateBoxDesktop .Vector {
+	position: absolute;
+	left: 525.92px;
+	top: 37.24px;
+	width: 6.901041666666667%;
+	height: 32.926829268292686%;
+}
+.SearchWalmart_SearchWalmart .SearchBarRateBoxDesktop .Walmart1 {
+	position: absolute;
+	left: 9.120000000000001px;
+	top: 13.68px;
+	width: 16.93232854207357%;
+	height: 68.29268292682927%;
+	object-fit: cover;
+	overflow: hidden;
+}
+.SearchWalmart_SearchWalmart .TopBar {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1444px;
+	height: 76px;
+}
+.SearchWalmart_SearchWalmart .TopBar .Rectangle19 {
+	position: absolute;
+	left: 38%;
+	top: 0px;
+	transform: translate(-50%, 0);
+	width: 1444px;
+	height: 76px;
+}
+.SearchWalmart_SearchWalmart .TopBar .Group1 {
+	position: absolute;
+	left: 213.56px;
+	top: 19.76px;
+	width: 872.48px;
+	height: 37.24px;
+}
+.SearchWalmart_SearchWalmart .TopBar .Group1 .SearchBarDesktop {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 872.48px;
+	height: 37.24px;
+	border-radius: 22.8px;
+}
+.SearchWalmart_SearchWalmart .TopBar .Group1 .SearchBarDesktop .Rectangle1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,254,254,1.00);
+	border-radius: 22.8px;
+	border: 1px solid rgba(174.25000101327896,161.90729051828384,161.90729051828384,1);
+	box-sizing: border-box;
+}
+.SearchWalmart_SearchWalmart .TopBar .Group1 .SearchBarDesktop .Vector_1 {
+	position: absolute;
+	left: 840.5600000000001px;
+	top: 8.36px;
+	width: 2.5261324041811846%;
+	height: 57.14285714285714%;
+}
+.SearchWalmart_SearchWalmart .TopBar .Group1 .FilterDropdownListDesktop {
+	position: absolute;
+	left: 12.92px;
+	top: 8.36px;
+	width: 21.28px;
+	height: 22.04px;
+}
+.SearchWalmart_SearchWalmart .TopBar .Group1 .FilterDropdownListDesktop .Vector_2 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+.SearchWalmart_SearchWalmart .TopBar .Group4 {
+	position: absolute;
+	left: 1102px;
+	top: 15.96px;
+	width: 279.68px;
+	height: 44.08px;
+}
+.SearchWalmart_SearchWalmart .TopBar .Group4 .Rectangle21 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(20,135,255,1.00);
+	border-radius: 22.8px;
+	border: 1px solid rgba(174.25000101327896,161.90729051828384,161.90729051828384,1);
+	box-sizing: border-box;
+}
+.SearchWalmart_SearchWalmart .TopBar .Group4 .USERNAME {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	color: rgba(255,255,255,1.00);
+	border: 1px solid rgba(0,0,0,1);
+	font-family: Microsoft JhengHei UI;
+	font-size: 18.240000000000002px;
+	font-weight: 700;
+	line-height: 21.375px;
+}
+.SearchWalmart_SearchWalmart .TopBar .Group4 ._ {
+	position: absolute;
+	left: 122.36px;
+	top: 3.04px;
+	width: 50%;
+	height: 86.20689655172413%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	color: rgba(255,255,255,1.00);
+	font-family: Inter;
+	font-size: 18.240000000000002px;
+	font-weight: 400;
+	line-height: 21.375px;
+}
+.SearchWalmart_SearchWalmart .TopBar .TSP3 {
+	position: absolute;
+	left: 17.48px;
+	top: 5.32px;
+	width: 164.92000000000002px;
+	height: 65.36px;
+	object-fit: cover;
+	overflow: hidden;
+	border-radius: 60.04px;
+}
+.SearchWalmart_SearchWalmart .TopBar .MenuIcon {
+	position: absolute;
+	left: 1397.64px;
+	top: 25.080000000000002px;
+	width: 31.92px;
+	height: 26.6px;
+}
+.SearchWalmart_SearchWalmart .TopBar .MenuIcon .Line1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 0%;
+	border: 1px solid rgba(255,255,255,1);
+}
+.SearchWalmart_SearchWalmart .TopBar .MenuIcon .Line2 {
+	position: absolute;
+	left: 0px;
+	top: 13.3px;
+	width: 100%;
+	height: 0%;
+	border: 1px solid rgba(255,255,255,1);
+}
+.SearchWalmart_SearchWalmart .TopBar .MenuIcon .Line3 {
+	position: absolute;
+	left: 0px;
+	top: 26.6px;
+	width: 100%;
+	height: 0%;
+	border: 1px solid rgba(255,255,255,1);
+}
