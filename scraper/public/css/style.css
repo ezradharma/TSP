@@ -1,0 +1,58 @@
+html {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.store_cont {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.store_cont div {
+    background-color: aquamarine;
+}
+
+.Charts {
+  display: block;
+  margin: 0 auto;
+  height: 80vh;
+  width: 80vw;
+}
+
+.reward-plats {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.reward-plats div {
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: black;
+    text-align: center;
+    padding: 1%;
+    margin: 1%;
+}
+
+.reward-plats span {
+    margin-bottom: 20px;
+}
+
+.reward-plats img {
+    margin-right: 95%;
+    width: 80px;
+    height: 60px;
+}
+
+.reward-plats i {
+    font-size: 50px;
+    float: right;
+    margin-top: -30px;
+}
+
+body > div > div:nth-child(1) > span:nth-child(4), body > div > div:nth-child(2) > span:nth-child(4),
+body > div > div:nth-child(3) > span:nth-child(4), body > div > div:nth-child(4) > span:nth-child(4),
+body > div > div:nth-child(5) > span:nth-child(4) {
+    margin-left: 40px;
+}
