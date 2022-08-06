@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>TSP Main Page</title>
+</head>
+<body style="padding: 2em">
+    <h1>TSP Main Page</h1>
+    <table class="table table-striped table-bordered">
+        <tr>
+        <th>Stores</th>
+        <th>Best Rates</th>
+        </tr>
+        {% for i in range(0, len) %}
+        <tr>
+            <td><a class="Store_Info" href="./rates/{{providers[i]}}" type="{{ providers[i] }}">{{ providers[i] }}</a></td><td>{{ rates[i] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
