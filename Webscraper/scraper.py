@@ -26,23 +26,32 @@ def index():
 
     rates = []
     providers = []
+    doget = []
 
     rate_box = driver.find_element_by_css_selector('div.fl div.fl table.cbm2 tbody')
 
     for item in rate_box.find_elements_by_css_selector('tr'):
-        for cell in item.find_elements_by_css_selector('td.l'):
-            # print(cell.text)
-            providers.append(cell.text)
+        if (item.text.find('%') != -1):
+            tmp = item.text.split("%")[0]
+            tmp = re.sub("[^A-Za-z]", "", tmp)
+            providers.append(tmp)
+        else: continue
+        # for cell in item.find_elements_by_css_selector('td.l'):
+        #     # print(cell.text)
+        #     providers.append(cell.text)
         for cell2 in item.find_elements_by_css_selector('td:nth-child(3) a'):
             # print(cell2.text)
-            rates.append(cell2.text)
+            if (cell2.text.find('%') != -1):
+                tmp = cell2.text.split("%")[0]
+                rates.append(tmp + '%')
+            else: continue
 
     return render_template('index.html', len = len(rates), rates = rates, providers = providers)
 
 @app.route('/rates/<store>', methods=['GET'])
 def ratepg(store):
-    driver.get("https://www.cashbackmonitor.com/cashback-store/" + store)
-
+    driver.get("https://www.cashbackmonitor.com/cashback-store/" + store.lower())
+    print("https://www.cashbackmonitor.com/cashback-store/" + store.lower())
     rates = []
     providers = []
     links = []
@@ -52,25 +61,53 @@ def ratepg(store):
     tbody = driver.find_element_by_css_selector('div.half.fl table tbody')
 
     for row in tbody.find_elements_by_tag_name('tr'):
-        for cell in row.find_elements_by_css_selector('td.l.lo'):
-            # print(cell.text)
-            providers.append(cell.text)
-        for cell2 in row.find_elements_by_css_selector('td.l a span'):
+        if (row.text.find('%') != -1):
+            tmp = row.text.split("%")[0]
+            tmp = row.text.split("Up to")[0]
+            tmp = re.sub("[^A-Za-z]", "", tmp)
+            providers.append(tmp)
+        else: continue
+        # for cell in row.find_elements_by_css_selector('td.l.lo'):
+        #     print(cell.text)
+        #     providers.append(cell.text)
+        for cell2 in row.find_elements_by_css_selector('td.l span'):
             # print(cell2.text)
-            rates.append(cell2.text)
+            if (cell2.text.find('$') != -1):
+                if (cell2.text.find('%') != -1):
+                    tmp = cell2.text.split('%')[0]
+                    rates.append(tmp + '%')
+                else: continue
+            else:
+                rates.append(cell2.text)
         for cell3 in row.find_elements_by_tag_name('td.l.lo a'):
             # print(cell3.get_attribute('href'))
             links.append(cell3.get_attribute('href'))
 
-    for i in range(0, len(rates)):
-        tmp = rates[i].split("%")[0]
-        tmp = re.sub("[^\d.]", "", tmp)
-        top5_rates.append(tmp)
-        top5_stores.append(providers[i])
+    x = len(rates)
+    if x <= 5:
+        for i in range(0, x):
+            tmp = rates[i].split("%")[0]
+            tmp = re.sub("[^\d.]", "", tmp)
+            top5_rates.append(tmp)
+            top5_stores.append(providers[i])
+        for i in range(x, 5):
+            top5_rates.append('0')
+            top5_stores.append('Placeholder')
+        for i in range(0, 5):
+            print(top5_stores[i])
+            print(top5_rates[i])
+    else:
+        for i in range(0, len(rates)):
+            tmp = rates[i].split("%")[0]
+            tmp = re.sub("[^\d.]", "", tmp)
+            top5_rates.append(tmp)
+            top5_stores.append(providers[i])
+            if (i == 5): break
 
-    for i in range(0, len(rates)):
-        print(top5_stores[i])
-        print(top5_rates[i])
+        for i in range(0, len(rates)):
+            print(top5_stores[i])
+            print(top5_rates[i])
+            if (i == 5): break
 
 
     driver.close()

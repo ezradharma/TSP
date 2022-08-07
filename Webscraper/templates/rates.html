@@ -10,45 +10,60 @@
     <title>TSP Rates Page</title>
 </head>
 <body style="padding: 1.6em">
-    <h1><a href="./">{{ store }}</a></h1>
-    <span id="plat1">{{top5_stores[0]}}</span><span id="plat2">{{top5_stores[1]}}</span><span id="plat3">{{top5_stores[2]}}</span>
-    <span id="plat4">{{top5_stores[3]}}</span><span id="plat5">{{top5_stores[4]}}</span>
-    <span id="num1">{{top5_rates[0]}}</span><span id="num2">{{top5_rates[1]}}</span><span id="num3">{{top5_rates[2]}}</span>
-    <span id="num4">{{top5_rates[3]}}</span><span id="num5">{{top5_rates[4]}}</span>
-    <div id="main" style="width: 100vw; height:800px;"></div>
+    <h1 id="store_title"><a href="./">{{ store }}</a></h1>
+    <span>Reward Platforms w/ Highest Cashback Rates: </span>
+    <span id="plat1">{{top5_stores[0]}}</span>
+    <span>, </span>
+    <span id="plat2">{{top5_stores[1]}}</span>
+    <span>, </span>
+    <span id="plat3">{{top5_stores[2]}}</span>
+    <span>, </span>
+    <span id="plat4">{{top5_stores[3]}}</span>
+    <span>, </span>
+    <span id="plat5">{{top5_stores[4]}}</span>
+    <br>
+    <span>Highest Cashback Rates for {{ store }}: </span>
+    <span id="num1">{{top5_rates[0]}}</span>
+    <span>%, </span>
+    <span id="num2">{{top5_rates[1]}}</span>
+    <span>%, </span>
+    <span id="num3">{{top5_rates[2]}}</span>
+    <span>%, </span>
+    <span id="num4">{{top5_rates[3]}}</span>
+    <span>%, </span>
+    <span id="num5">{{top5_rates[4]}}</span><span>%</span>
+    <div id="main" class="center" style="width: 100vw; height:800px;"></div>
         <script type="text/javascript">
-            // Initialize the echarts instance based on the prepared dom
             var myChart = echarts.init(document.getElementById('main'));
             var arr = document.getElementById('num1').textContent;
             var arr2 = document.getElementById('num2').textContent;
             var arr3 = document.getElementById('num3').textContent;
             var arr4 = document.getElementById('num4').textContent;
             var arr5 = document.getElementById('num5').textContent;
-            var plat = document.getElementById('plat1').textContent;
+            var plat = document.getElementById('plat1').text;
             var plat2 = document.getElementById('plat2').textContent;
             var plat3 = document.getElementById('plat3').textContent;
             var plat4 = document.getElementById('plat4').textContent;
             var plat5 = document.getElementById('plat5').textContent;
-            // Specify the configuration items and data for the chart
+            var name = document.getElementById('store_title').textContent;
+
             var option = {
                 title: {
-                text: 'ECharts Getting Started Example'
+                    text: name + '\'s Top Cashback Rates'
                 },
                 tooltip: {},
                 legend: {
-                data: ['rates']
+                data: ['Rates']
                 },
                 xAxis: {
-                data: [plat1, plat2, plat3, plat4, plat5]
+                    data: [plat1, plat2, plat3, plat4, plat5]
                 },
                 yAxis: {},
-                series: [
-                {
+                series: [{
                     name: 'rates',
                     type: 'bar',
                     data: [arr, arr2, arr3, arr4, arr5]
-                }
-                ]
+                }]
             };
 
             // Display the chart using the configuration items and data just specified.
