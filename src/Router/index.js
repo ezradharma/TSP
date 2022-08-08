@@ -22,6 +22,8 @@ import HotelsComRatesPage from '../Components/HotelsComRatesPage';
 import TargetRatesPage from '../Components/TargetRatesPage';
 import CostcoRatesPage from '../Components/CostcoRatesPage';
 import AmazonRatesPage from '../Components/AmazonRatesPage';
+import TestPage from '../Components/TestPage';
+import TestRatePage from '../Components/TestRatePage';
 
 const RouterDOM = () => {
 	return (
@@ -48,6 +50,8 @@ const RouterDOM = () => {
 				<Route exact path="/targetratespage"><TargetRatesPage /></Route>
 				<Route exact path="/costcoratespage"><CostcoRatesPage /></Route>
 				<Route exact path="/amazonratespage"><AmazonRatesPage /></Route>
+				<Route exact path="/testpage"><TestPage /></Route>
+				<Route exact path="/testratepage"><TestRatePage /></Route>
 			</Switch>
 		</Router>
 	);
