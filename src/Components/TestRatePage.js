@@ -2,14 +2,17 @@ import React, { useEffect, useState } from "react";
 import './SearchWalmart.css'
 import './style.css'
 import ImgAsset from '../public'
+import ReactEcharts from "echarts-for-react"
 import {Link} from 'react-router-dom'
 
 export default function TestRatePage () {
 
 	const [data, setArr] = useState({
         'top5_percents': '',
+		'top5_platforms': '',
         'percents': 5,
-        'platforms': 'platform_holder'
+        'platforms': 'platform_holder',
+		'links': ''
     });
 
 	useEffect(() => {
@@ -17,11 +20,30 @@ export default function TestRatePage () {
 		.then(data => {
 			setArr({
                 'top5_percents': data.top5_percents,
+				'top5_platforms': data.top5_platforms,
 				'percents': data.percents,
-				'platforms': data.platforms
+				'platforms': data.platforms,
+				'links': data.links
 			})
+			console.log(data)
 		});
 	}, []);
+
+	const option = {
+		xAxis: {
+			type: 'category',
+			data: data.top5_platforms
+		},
+		yAxis: {
+			type: 'value'
+		},
+		series: [
+			{
+			data: data.top5_percents,
+			type: 'bar'
+			}
+		]
+	}; 
 
     return (
         <>
@@ -80,7 +102,51 @@ export default function TestRatePage () {
                 <span>%, </span>
                 <span id="num5">{data.top5_percents[4]}</span><span>%</span>
             </div>
-                
+			<ReactEcharts option={option} />
+			<div id="wrap">
+            <div class="reward-plats container center">
+                <div>
+                    <img src={ImgAsset.StoreRateHistoricalPageWithAccount_ServiceLogo} />
+                    <span>{data.top5_platforms[0]}</span><br />
+                    <span>Best Rates: {data.top5_percents[0]}%</span>
+                    <a href={data.links[0]}>
+                        <i class='fas'>&#xf105;</i>
+                    </a>
+                </div>
+                <div>
+                    <img src={ImgAsset.StoreRateHistoricalPageWithAccount_ServiceLogo_1} />
+                    <span>{data.top5_platforms[1]}</span><br />
+                    <span>Best Rates: {data.top5_percents[1]}%</span>
+                    <a href={data.links[1]}>
+                        <i class='fas'>&#xf105;</i>
+                    </a>
+                </div>
+                <div>
+                    <img src={ImgAsset.StoreRateHistoricalPageWithAccount_ServiceLogo_2} />
+                    <span>{data.top5_platforms[2]}</span><br />
+                    <span>Best Rates: {data.top5_percents[2]}%</span>
+                    <a href={data.links[2]}>
+                        <i class='fas'>&#xf105;</i>
+                    </a>
+                </div>
+                <div>
+                    <img src={ImgAsset.StoreRateHistoricalPageWithAccount_ServiceLogo_3} />
+                    <span>{data.top5_platforms[3]}</span><br />
+                    <span>Best Rates: {data.top5_percents[3]}%</span>
+                    <a href={data.links[3]}>
+                        <i class='fas'>&#xf105;</i>
+                    </a>
+                    </div>
+                <div>
+                    <img src={ImgAsset.StoreRateHistoricalPageWithAccount_ServiceLogo_4} />
+                    <span>{data.top5_platforms[4]}</span><br />
+                    <span>Best Rates: {data.top5_percents[4]}%</span>
+                    <a href={data.links[4]}>
+                        <i class='fas'>&#xf105;</i>
+                    </a>
+                </div>
+                </div>
+            </div>
 		</div>
     </>
 	)

@@ -1,14 +1,53 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import './SearchWalmart.css'
 import './style.css'
 import ImgAsset from '../public'
-import { FaGreaterThan } from "react-icons/fa";
+import ReactEcharts from "echarts-for-react"
 import {Link} from 'react-router-dom'
 
-export default function KohlsRates () {
+export default function KohlsRatePage () {
+
+	const [data, setArr] = useState({
+        'top5_percents': '',
+		'top5_platforms': '',
+        'percents': 5,
+        'platforms': 'platform_holder',
+		'links': ''
+    });
+
+	useEffect(() => {
+        fetch("/rates/kohls").then(res => res.json())
+		.then(data => {
+			setArr({
+                'top5_percents': data.top5_percents,
+				'top5_platforms': data.top5_platforms,
+				'percents': data.percents,
+				'platforms': data.platforms,
+				'links': data.links
+			})
+			console.log(data)
+		});
+	}, []);
+
+	const option = {
+		xAxis: {
+			type: 'category',
+			data: data.top5_platforms
+		},
+		yAxis: {
+			type: 'value'
+		},
+		series: [
+			{
+			data: data.top5_percents,
+			type: 'bar'
+			}
+		]
+	}; 
+
     return (
         <>
-        <div className='SearchWalmart_SearchWalmart'>
+		<div className='SearchWalmart_SearchWalmart'>
         	<div className='TopBar'>
 				<img className='Rectangle19' src = {ImgAsset.SearchWalmart_Rectangle19} />
 				<div className='Group1'>
@@ -40,52 +79,75 @@ export default function KohlsRates () {
 					</div>
 				</Link>
 			</div>
-            <div id="wrap">
-            <img class="Charts" src={ImgAsset.KohlsGraph}/>
-                <div class="reward-plats container center">
-                    <div>
-                        <img src={ImgAsset.StoreRateHistoricalPageWithAccount_ServiceLogo} />
-                        <span>Hoopla Doopla</span><br/>
-                        <span>Best Rates: 5%</span>
-                        <a href="https://hoopladoopla.com/brand/kohls">
-                            <h1><FaGreaterThan style={{fontSize: '50px', float: 'right', marginTop: '-90px'}}/></h1>
-                        </a>
+            <div style={{marginTop: '100px', color: "white"}}>
+                <span>Reward Platforms w/ Highest Cashback Rates: </span>
+                <span id="plat1">{data.platforms[0]}</span>
+                <span>, </span>
+                <span id="plat2">{data.platforms[1]}</span>
+                <span>, </span>
+                <span id="plat3">{data.platforms[2]}</span>
+                <span>, </span>
+                <span id="plat4">{data.platforms[3]}</span>
+                <span>, </span>
+                <span id="plat5">{data.platforms[4]}</span>
+                <br></br>
+                <span>Highest Cashback Rates for Kohls: </span>
+                <span id="num1">{data.top5_percents[0]}</span>
+                <span>%, </span>
+                <span id="num2">{data.top5_percents[1]}</span>
+                <span>%, </span>
+                <span id="num3">{data.top5_percents[2]}</span>
+                <span>%, </span>
+                <span id="num4">{data.top5_percents[3]}</span>
+                <span>%, </span>
+                <span id="num5">{data.top5_percents[4]}</span><span>%</span>
+            </div>
+			<ReactEcharts option={option} />
+			<div id="wrap">
+            <div class="reward-plats container center">
+                <div>
+                    <img src={ImgAsset.StoreRateHistoricalPageWithAccount_ServiceLogo} />
+                    <span>{data.top5_platforms[0]}</span><br />
+                    <span>Best Rates: {data.top5_percents[0]}%</span>
+                    <a href={data.links[0]}>
+                        <i class='fas'>&#xf105;</i>
+                    </a>
+                </div>
+                <div>
+                    <img src={ImgAsset.StoreRateHistoricalPageWithAccount_ServiceLogo_1} />
+                    <span>{data.top5_platforms[1]}</span><br />
+                    <span>Best Rates: {data.top5_percents[1]}%</span>
+                    <a href={data.links[1]}>
+                        <i class='fas'>&#xf105;</i>
+                    </a>
+                </div>
+                <div>
+                    <img src={ImgAsset.StoreRateHistoricalPageWithAccount_ServiceLogo_2} />
+                    <span>{data.top5_platforms[2]}</span><br />
+                    <span>Best Rates: {data.top5_percents[2]}%</span>
+                    <a href={data.links[2]}>
+                        <i class='fas'>&#xf105;</i>
+                    </a>
+                </div>
+                <div>
+                    <img src={ImgAsset.StoreRateHistoricalPageWithAccount_ServiceLogo_3} />
+                    <span>{data.top5_platforms[3]}</span><br />
+                    <span>Best Rates: {data.top5_percents[3]}%</span>
+                    <a href={data.links[3]}>
+                        <i class='fas'>&#xf105;</i>
+                    </a>
                     </div>
-                    <div>
-                        <img src={ImgAsset.StoreRateHistoricalPageWithAccount_ServiceLogo_1} />
-                        <span>MaxRebates</span><br/>
-                        <span>Best Rates: 4%</span>
-                        <a href="https://www.maxrebates.com/us/stores/Kohls">
-                            <h1><FaGreaterThan style={{fontSize: '50px', float: 'right', marginTop: '-90px'}}/></h1>
-                        </a>
-                    </div>
-                    <div>
-                        <img src={ImgAsset.StoreRateHistoricalPageWithAccount_ServiceLogo_2} />
-                        <span>rebatesme</span><br/>
-                        <span>Best Rates: 4%</span>
-                        <a href="https://www.rebatesme.com/en/stores/kohls">
-                            <h1><FaGreaterThan style={{fontSize: '50px', float: 'right', marginTop: '-90px'}}/></h1>
-                        </a>
-                    </div>
-                    <div>
-                        <img src={ImgAsset.StoreRateHistoricalPageWithAccount_ServiceLogo_3} />
-                        <span>Dollar Dig</span><br/>
-                        <span>Best Rates: 4%</span>
-                        <a href="https://www.dollardig.com/store/kohls/">
-                            <h1><FaGreaterThan style={{fontSize: '50px', float: 'right', marginTop: '-90px'}}/></h1>
-                        </a>
-                    </div>
-                    <div>
-                        <img src={ImgAsset.StoreRateHistoricalPageWithAccount_ServiceLogo_4} />
-                        <span>GoCashBack</span><br/>
-                        <span>Best Rates: 3%</span>
-                        <a href="https://www.gocashback.com/stores/kohls">
-                            <h1><FaGreaterThan style={{fontSize: '50px', float: 'right', marginTop: '-90px'}}/></h1>
-                        </a>
-                    </div>
+                <div>
+                    <img src={ImgAsset.StoreRateHistoricalPageWithAccount_ServiceLogo_4} />
+                    <span>{data.top5_platforms[4]}</span><br />
+                    <span>Best Rates: {data.top5_percents[4]}%</span>
+                    <a href={data.links[4]}>
+                        <i class='fas'>&#xf105;</i>
+                    </a>
+                </div>
                 </div>
             </div>
-            </div>
-        </>
-    )
+		</div>
+    </>
+	)
 }
