@@ -26,7 +26,7 @@ export default function HomePage () {
 		<Link to='/HotelsComRatesPage'><div>HotelsComRatesPage</div></Link>
 		<Link to='/KohlsRatesPage'><div>KohlsRatesPage</div></Link>
 		<Link to='/TargetRatesPage'><div>TargetRatesPage</div></Link>*/}
-		<Link to='/MainPageV2'><div>MainPage</div></Link>
+		<Link to='/MainPageV2'><div>Start the Test</div></Link>
 		 {/* <Link to='/TestRatePage'><div>TestRatePage</div></Link>
 		<Link to='/RatePage'><div>RatePage</div></Link> */}
 	</div>

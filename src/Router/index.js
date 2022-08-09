@@ -12,7 +12,7 @@ import SearchAFilterHighest from '../Components/SearchAFilterHighest';
 //import Signup from '../Components/Signup';
 //import Login from '../Components/Login';
 //import MainPageWithAccount from '../Components/MainPageWithAccount';
-import StoreRatePageWithAccount from '../Components/StoreRatePageWithAccount';
+//import StoreRatePageWithAccount from '../Components/StoreRatePageWithAccount';
 //import StoreRateHistoricalPageWithAccount from '../Components/StoreRateHistoricalPageWithAccount';
 import WalmartRatesPage from '../Components/WalmartRatesPage';
 import GapRatesPage from '../Components/GapRatesPage';
@@ -37,6 +37,8 @@ const RouterDOM = () => {
 				<Route exact path="/login"><Login /></Route>
 				<Route exact path="/storeratehistoricalpagewithaccount"><StoreRateHistoricalPageWithAccount /></Route>
 				<Route exact path="/mainpagewithaccount"><MainPageWithAccount /></Route>
+				<Route exact path="/storeratepagewithaccount"><StoreRatePageWithAccount /></Route>
+				
 				*/}
 				<Route exact path="/searchwalmart"><SearchWalmart /></Route>
 				<Route exact path="/searcha"><SearchA /></Route>
@@ -45,7 +47,6 @@ const RouterDOM = () => {
 				<Route exact path="/searchafilterhighest"><SearchAFilterHighest /></Route>
 				
 				
-				<Route exact path="/storeratepagewithaccount"><StoreRatePageWithAccount /></Route>
 				
 				<Route exact path="/walmartratespage"><WalmartRatesPage /></Route>
 				<Route exact path="/gapratespage"><GapRatesPage /></Route>
