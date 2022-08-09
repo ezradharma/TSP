@@ -22,7 +22,7 @@ import HotelsComRatesPage from '../Components/HotelsComRatesPage';
 import TargetRatesPage from '../Components/TargetRatesPage';
 import CostcoRatesPage from '../Components/CostcoRatesPage';
 import AmazonRatesPage from '../Components/AmazonRatesPage';
-// import MainPageV2 from '../Components/MainPageV2';
+import MainPageV2 from '../Components/MainPageV2';
 // import TestRatePage from '../Components/TestRatePage';
 // import RatePage from '../Components/RatePage';
 
@@ -51,8 +51,8 @@ const RouterDOM = () => {
 				<Route exact path="/targetratespage"><TargetRatesPage /></Route>
 				<Route exact path="/costcoratespage"><CostcoRatesPage /></Route>
 				<Route exact path="/amazonratespage"><AmazonRatesPage /></Route>
-				{/* <Route exact path="/mainpagev2"><MainPageV2 /></Route> */
-				/* <Route exact path="/testratepage"><TestRatePage /></Route>
+				 <Route exact path="/mainpagev2"><MainPageV2 /></Route>
+				{/* <Route exact path="/testratepage"><TestRatePage /></Route>
 				<Route exact path="/ratepage"><RatePage /></Route> */}
 			</Switch>
 		</Router>

@@ -760,61 +760,131 @@ def main_data():
 
 @app.route('/home_data')
 def home_data():
-    driver.get("https://www.cashbackmonitor.com/walmart")
+    driver.get("https://www.cashbackmonitor.com/cashback-store/walmart")
 
+    rates_tmp = []
+    providers_tmp = []
     rates = []
     providers = []
 
-    t = driver.find_element_by_css_selector('div.half.fl table tbody')
+    tbody = driver.find_element_by_css_selector('div.half.fl table tbody')
 
-    for row in t.find_elements_by_tag_name('tr'):
-        for cell2 in row.find_elements_by_css_selector('td.l span#ra0'):
-            rates.append(cell2.text)
-            providers.append('Walmart')
+    for row in tbody.find_elements_by_tag_name('tr'):
+        for cell2 in row.find_elements_by_css_selector('td.l span'):
+            if (len(rates_tmp) >= 1): break
+            print(cell2.text)
+            rates_tmp.append(cell2.text)
+            providers_tmp.append('Walmart')
 
-    driver.get("https://www.cashbackmonitor.com/gap")
-    t = driver.find_element_by_css_selector('div.half.fl table tbody')
+    rates.append(rates_tmp[0])
+    providers.append(providers_tmp[0])
+    rates_tmp = []
+    providers_tmp = []
 
-    for row in t.find_elements_by_tag_name('tr'):
-        for cell2 in row.find_elements_by_css_selector('ra0'):
-            rates.append(cell2.text)
-            providers.append('Gap')
+    driver.get("https://www.cashbackmonitor.com/cashback-store/amazon")
+    tbody = driver.find_element_by_css_selector('div.half.fl table tbody')
 
-    driver.get("https://www.cashbackmonitor.com/amazon")
-    for row in t.find_elements_by_tag_name('tr'):
-        for cell2 in row.find_elements_by_css_selector('ra0'):
-            rates.append(cell2.text)
-            providers.append('Amazon')
+    for row in tbody.find_elements_by_tag_name('tr'):
+        for cell2 in row.find_elements_by_css_selector('td.l span'):
+            if (len(rates_tmp) >= 1): break
+            # print(cell2.text)
+            rates_tmp.append(cell2.text)
+            providers_tmp.append('Amazon')
+            
+    rates.append(rates_tmp[0])
+    providers.append(providers_tmp[0])
+    rates_tmp = []
+    providers_tmp = []
 
-    driver.get("https://www.cashbackmonitor.com/costco")
-    for row in t.find_elements_by_tag_name('tr'):
-        for cell2 in row.find_elements_by_css_selector('ra0'):
-            rates.append(cell2.text)
-            providers.append('Costco')
+    driver.get("https://www.cashbackmonitor.com/cashback-store/gap")
+    tbody = driver.find_element_by_css_selector('div.half.fl table tbody')
 
-    driver.get("https://www.cashbackmonitor.com/homedepot")
-    for row in t.find_elements_by_tag_name('tr'):
-        for cell2 in row.find_elements_by_css_selector('ra0'):
-            rates.append(cell2.text)
-            providers.append('Home Depot')
+    for row in tbody.find_elements_by_tag_name('tr'):
+        for cell2 in row.find_elements_by_css_selector('td.l span'):
+            if (len(rates_tmp) >= 1): break
+            # print(cell2.text)
+            rates_tmp.append(cell2.text)
+            providers_tmp.append('Gap')
 
-    driver.get("https://www.cashbackmonitor.com/hotels.com")
-    for row in t.find_elements_by_tag_name('tr'):
-        for cell2 in row.find_elements_by_css_selector('ra0'):
-            rates.append(cell2.text)
-            providers.append('Hotels.com')
+    rates.append(rates_tmp[0])
+    providers.append(providers_tmp[0])
+    rates_tmp = []
+    providers_tmp = []
 
-    driver.get("https://www.cashbackmonitor.com/kohls")
-    for row in t.find_elements_by_tag_name('tr'):
-        for cell2 in row.find_elements_by_css_selector('ra0'):
-            rates.append(cell2.text)
-            providers.append('Kohls')
+    driver.get("https://www.cashbackmonitor.com/cashback-store/hotels.com")
+    tbody = driver.find_element_by_css_selector('div.half.fl table tbody')
 
-    driver.get("https://www.cashbackmonitor.com/target")
-    for row in t.find_elements_by_tag_name('tr'):
-        for cell2 in row.find_elements_by_css_selector('ra0'):
-            rates.append(cell2.text)
-            providers.append('Target')
+    for row in tbody.find_elements_by_tag_name('tr'):
+        for cell2 in row.find_elements_by_css_selector('td.l span'):
+            if (len(rates_tmp) >= 1): break
+            # print(cell2.text)
+            rates_tmp.append(cell2.text)
+            providers_tmp.append('Hotels.com')
+
+    rates.append(rates_tmp[0])
+    providers.append(providers_tmp[0])
+    rates_tmp = []
+    providers_tmp = []
+
+    driver.get("https://www.cashbackmonitor.com/cashback-store/costco")
+    tbody = driver.find_element_by_css_selector('div.half.fl table tbody')
+
+    for row in tbody.find_elements_by_tag_name('tr'):
+        for cell2 in row.find_elements_by_css_selector('td.l span'):
+            if (len(rates_tmp) >= 1): break
+            # print(cell2.text)
+            rates_tmp.append(cell2.text)
+            providers_tmp.append('Costco')
+
+    rates.append(rates_tmp[0])
+    providers.append(providers_tmp[0])
+    rates_tmp = []
+    providers_tmp = []
+
+    driver.get("https://www.cashbackmonitor.com/cashback-store/kohls")
+    tbody = driver.find_element_by_css_selector('div.half.fl table tbody')
+
+    for row in tbody.find_elements_by_tag_name('tr'):
+        for cell2 in row.find_elements_by_css_selector('td.l span'):
+            if (len(rates_tmp) >= 1): break
+            # print(cell2.text)
+            rates_tmp.append(cell2.text)
+            providers_tmp.append('Kohls')
+
+    rates.append(rates_tmp[0])
+    providers.append(providers_tmp[0])
+    rates_tmp = []
+    providers_tmp = []
+
+    driver.get("https://www.cashbackmonitor.com/cashback-store/homedepot")
+    tbody = driver.find_element_by_css_selector('div.half.fl table tbody')
+
+    for row in tbody.find_elements_by_tag_name('tr'):
+        for cell2 in row.find_elements_by_css_selector('td.l span'):
+            if (len(rates_tmp) >= 1): break
+            # print(cell2.text)
+            rates_tmp.append(cell2.text)
+            providers_tmp.append('Home Depot')
+            
+    rates.append(rates_tmp[0])
+    providers.append(providers_tmp[0])
+    rates_tmp = []
+    providers_tmp = []
+
+    driver.get("https://www.cashbackmonitor.com/cashback-store/target")
+    tbody = driver.find_element_by_css_selector('div.half.fl table tbody')
+
+    for row in tbody.find_elements_by_tag_name('tr'):
+        for cell2 in row.find_elements_by_css_selector('td.l span'):
+            if (len(rates_tmp) >= 1): break
+            # print(cell2.text)
+            rates_tmp.append(cell2.text)
+            providers_tmp.append('Target')
+
+    rates.append(rates_tmp[0])
+    providers.append(providers_tmp[0])
+    rates_tmp = []
+    providers_tmp = []
 
     send_stores = providers
     send_rates = rates

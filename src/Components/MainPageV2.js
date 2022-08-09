@@ -58,42 +58,50 @@ export default function TestPage () {
 				</Link>
 			</div>
 			<div id="main_stores" style={{color: "black"}}>
-				<div href="./rates">
+				<div>
+					<br/>
 					{data.stores[0]}
 					<br/>
 					Best Rate: {data.percents[0]}
 				</div>
-				<div href="./rates">
+				<div>
+					<br/>
 					{data.stores[1]}
 					<br/>
 					Best Rate: {data.percents[1]}
 				</div>
-				<div href="./rates">
+				<div>
+					<br/>
 					{data.stores[2]}
 					<br/>
 					Best Rate: {data.percents[2]}
 				</div>
-				<div href="./rates">
+				<div>
+					<br/>
 					{data.stores[3]}
 					<br/>
 					Best Rate: {data.percents[3]}
 					</div>
-				<div href="./rates">
+				<div>
+					<br/>
 					{data.stores[4]}
 					<br/>
 					Best Rate: {data.percents[4]}
 				</div>
-				<div href="./rates">
+				<div>
+					<br/>
 					{data.stores[5]}
 					<br/>
 					Best Rate: {data.percents[5]}
 				</div>
-				<div href="./rates">
+				<div>
+					<br/>
 					{data.stores[6]}
 					<br/>
 					Best Rate: {data.percents[6]}
 				</div>
-				<div href="./rates">
+				<div>
+					<br/>
 					{data.stores[7]}
 					<br/>
 					Best Rate: {data.percents[7]}

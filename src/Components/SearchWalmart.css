@@ -64,7 +64,7 @@
 }
 .SearchWalmart_SearchWalmart .TopBar .Rectangle19 {
 	position: absolute;
-	left: 38%;
+	left: 50%;
 	top: 0px;
 	transform: translate(-50%, 0);
 	width: 1444px;
@@ -171,7 +171,7 @@
 .SearchWalmart_SearchWalmart .TopBar .TSP3 {
 	position: absolute;
 	left: 17.48px;
-	top: 5.32px;
+	top: 4px;
 	width: 164.92000000000002px;
 	height: 65.36px;
 	object-fit: cover;
