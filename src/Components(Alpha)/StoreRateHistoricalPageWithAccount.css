@@ -1,0 +1,578 @@
+
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	margin: auto;
+	width: 100%;
+	height: 100vh;
+	overflow: auto;
+	background: rgba(0,0,0,1.00);
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph {
+	position: absolute;
+	left: 0px;
+	top: 76px;
+	width: 1444px;
+	height: 744.8px;
+	background: rgba(255,255,255,1.00);
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .HistoricalRatesforWalmart {
+	position: absolute;
+	left: 722.76px;
+	top: 0px;
+	width: 649.04px;
+	height: 38px;
+	display: flex;
+	justify-content: flex-end;
+	text-align: right;
+	align-items: center;
+	color: rgba(0,0,0,1.00);
+	font-family: Microsoft JhengHei UI;
+	font-size: 36.480000000000004px;
+	font-weight: 700;
+	line-height: 42.75px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .StoreLogo {
+	position: absolute;
+	left: 762.28px;
+	top: -3.8px;
+	width: 114.76px;
+	height: 46.36px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .Rectangle41 {
+	position: absolute;
+	left: 62.32px;
+	top: 42.56px;
+	width: 1309.48px;
+	height: 577.6px;
+	background: rgba(0,104,213,1.00);
+	border-radius: 11.4px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .Rectangle42 {
+	position: absolute;
+	left: 61.56px;
+	top: 456.76px;
+	width: 1253.24px;
+	height: 163.4px;
+	background: rgba(0,0,0,1.00);
+	border-radius: 11.4px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph ._ {
+	position: absolute;
+	left: 62.32px;
+	top: 275.88px;
+	width: 22.8px;
+	height: 16.72px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	color: rgba(255,255,255,1.00);
+	border: 0.5px solid rgba(0,0,0,1);
+	font-family: Microsoft JhengHei UI;
+	font-size: 18.240000000000002px;
+	font-weight: 700;
+	line-height: 21.375px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph ._012345 {
+	position: absolute;
+	left: 85.12px;
+	top: 114.76px;
+	width: 20.52px;
+	height: 338.96px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	color: rgba(255,255,255,1.00);
+	border: 0.5px solid rgba(0,0,0,1);
+	font-family: Microsoft JhengHei UI;
+	font-size: 18.240000000000002px;
+	font-weight: 700;
+	line-height: 21.375px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .Rectangle43 {
+	position: absolute;
+	left: 105.64px;
+	top: 114.76px;
+	width: 1209.16px;
+	height: 335.92px;
+	background: rgba(255,255,255,0.05);
+	border: 1px solid rgba(0,0,0,1);
+	box-sizing: border-box;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .ServiceRate {
+	position: absolute;
+	left: 128.44px;
+	top: 460.56px;
+	width: 25.84px;
+	height: 155.04px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .ServiceRate .HooplaDoopla {
+	position: absolute;
+	left: 2.2800000000000002px;
+	top: 0px;
+	width: 21.28px;
+	height: 129.2px;
+	display: flex;
+	justify-content: flex-end;
+	text-align: right;
+	align-items: center;
+	color: rgba(255,0,0,1.00);
+	border: 0.5px solid rgba(0,0,0,1);
+	font-family: Microsoft JhengHei UI;
+	font-size: 18.240000000000002px;
+	font-weight: 300;
+	line-height: 21.375px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .ServiceRate .ServiceLogo {
+	position: absolute;
+	left: 0px;
+	top: 129.2px;
+	width: 25.84px;
+	height: 25.84px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .ServiceRate_1 {
+	position: absolute;
+	left: 183.16px;
+	top: 460.56px;
+	width: 25.84px;
+	height: 155.04px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .ServiceRate_1 .MaxRebates {
+	position: absolute;
+	left: 2.2800000000000002px;
+	top: 0px;
+	width: 21.28px;
+	height: 129.2px;
+	display: flex;
+	justify-content: flex-end;
+	text-align: right;
+	align-items: center;
+	color: rgba(0,187,179,1.00);
+	border: 0.5px solid rgba(0,0,0,1);
+	font-family: Microsoft JhengHei UI;
+	font-size: 18.240000000000002px;
+	font-weight: 300;
+	line-height: 21.375px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .ServiceRate_1 .ServiceLogo_1 {
+	position: absolute;
+	left: 0px;
+	top: 129.2px;
+	width: 25.84px;
+	height: 25.84px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .ServiceRate_2 {
+	position: absolute;
+	left: 237.88px;
+	top: 460.56px;
+	width: 25.84px;
+	height: 155.04px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .ServiceRate_2 .rebatesme {
+	position: absolute;
+	left: 2.2800000000000002px;
+	top: 0px;
+	width: 21.28px;
+	height: 129.2px;
+	display: flex;
+	justify-content: flex-end;
+	text-align: right;
+	align-items: center;
+	color: rgba(6,158,97,1.00);
+	border: 0.5px solid rgba(0,0,0,1);
+	font-family: Microsoft JhengHei UI;
+	font-size: 18.240000000000002px;
+	font-weight: 300;
+	line-height: 21.375px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .ServiceRate_2 .ServiceLogo_2 {
+	position: absolute;
+	left: 0px;
+	top: 129.2px;
+	width: 25.84px;
+	height: 25.84px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .ServiceRate_3 {
+	position: absolute;
+	left: 291.84000000000003px;
+	top: 460.56px;
+	width: 25.84px;
+	height: 155.04px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .ServiceRate_3 .DollarDig {
+	position: absolute;
+	left: 2.2800000000000002px;
+	top: 0px;
+	width: 21.28px;
+	height: 129.2px;
+	display: flex;
+	justify-content: flex-end;
+	text-align: right;
+	align-items: center;
+	color: rgba(246,199,53,1.00);
+	border: 0.5px solid rgba(0,0,0,1);
+	font-family: Microsoft JhengHei UI;
+	font-size: 18.240000000000002px;
+	font-weight: 300;
+	line-height: 21.375px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .ServiceRate_3 .ServiceLogo_3 {
+	position: absolute;
+	left: 0px;
+	top: 129.2px;
+	width: 25.84px;
+	height: 25.84px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .ServiceRate_4 {
+	position: absolute;
+	left: 346.56px;
+	top: 460.56px;
+	width: 25.84px;
+	height: 155.04px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .ServiceRate_4 .GoCashBack {
+	position: absolute;
+	left: 2.2800000000000002px;
+	top: 0px;
+	width: 21.28px;
+	height: 129.2px;
+	display: flex;
+	justify-content: flex-end;
+	text-align: right;
+	align-items: center;
+	color: rgba(253,77,77,1.00);
+	border: 0.5px solid rgba(0,0,0,1);
+	font-family: Microsoft JhengHei UI;
+	font-size: 18.240000000000002px;
+	font-weight: 300;
+	line-height: 21.375px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .ServiceRate_4 .ServiceLogo_4 {
+	position: absolute;
+	left: 0px;
+	top: 129.2px;
+	width: 25.84px;
+	height: 25.84px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .CurrentMode {
+	position: absolute;
+	left: 62.32px;
+	top: 637.64px;
+	width: 523.64px;
+	height: 88.16px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .CurrentMode .Rectangle45 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 523.64px;
+	height: 88.16px;
+	background: rgba(0,104,213,1.00);
+	border-radius: 11.4px;
+	border: 1px solid rgba(0,0,0,1);
+	box-sizing: border-box;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .CurrentMode .CurrentMode_1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 523.64px;
+	height: 88.16px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	color: rgba(0,0,0,1.00);
+	font-family: Microsoft JhengHei UI;
+	font-size: 36.480000000000004px;
+	font-weight: 700;
+	line-height: 42.75px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .Line5 {
+	position: absolute;
+	left: 105.64px;
+	top: 119.32000000000001px;
+	width: 1209.1607421875px;
+	height: 0.76px;
+	background: rgba(255,0,0,1.00);
+	border: 1px solid rgba(255,0,0,1);
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .JanFebMarAprMayJunJulAugSeptOctNovDec {
+	position: absolute;
+	left: 105.64px;
+	top: 42.56px;
+	width: 1209.16px;
+	height: 66.88px;
+	display: flex;
+	align-items: center;
+	color: rgba(255,255,255,1.00);
+	border: 1px solid rgba(0,0,0,1);
+	font-family: Microsoft JhengHei UI;
+	font-size: 18.240000000000002px;
+	font-weight: 300;
+	line-height: 21.375px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .Line6 {
+	position: absolute;
+	left: 105.64px;
+	top: 119.32000000000001px;
+	width: 116.28px;
+	height: 70.68px;
+	border: 1px solid rgba(0,165.00000536441803,158.00000578165054,1);
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .Line7 {
+	position: absolute;
+	left: 222.68px;
+	top: 190px;
+	width: 1092.1200000000001px;
+	height: 0px;
+	border: 1px solid rgba(0,165.00000536441803,158.00000578165054,1);
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .Line8 {
+	position: absolute;
+	left: 106.3844140625px;
+	top: 379.62px;
+	width: 230.311171875px;
+	height: 0px;
+	border: 1px solid rgba(5.000000176951289,155.00000596046448,94.0000019967556,1);
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .Line9 {
+	position: absolute;
+	left: 335.5912109375px;
+	top: 189.8091650390625px;
+	width: 109.44px;
+	height: 188.48px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .Line10 {
+	position: absolute;
+	left: 444.6px;
+	top: 189.24px;
+	width: 870.2px;
+	height: 0.7252099609375px;
+	border: 1px solid rgba(7.000000057742,159.0000057220459,98.00000175833702,1);
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .Line11 {
+	position: absolute;
+	left: 105.64px;
+	top: 316.92px;
+	width: 448.4007421875px;
+	height: 0px;
+	border: 1px solid rgba(246.0000005364418,199.0000033378601,53.00000064074993,1);
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .Line12 {
+	position: absolute;
+	left: 554.04px;
+	top: 255.36px;
+	width: 108.68px;
+	height: 60.8px;
+	border: 1px solid rgba(246.0000005364418,199.0000033378601,53.00000064074993,1);
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .Line13 {
+	position: absolute;
+	left: 661.96px;
+	top: 255.36px;
+	width: 544.16px;
+	height: 0px;
+	border: 1px solid rgba(246.0000005364418,199.0000033378601,53.00000064074993,1);
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .Line14 {
+	position: absolute;
+	left: 1205.3600000000001px;
+	top: 190px;
+	width: 109.44px;
+	height: 64.6px;
+	border: 1px solid rgba(246.0000005364418,199.0000033378601,53.00000064074993,1);
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .Line15 {
+	position: absolute;
+	left: 105.64px;
+	top: 185.44px;
+	width: 117.04px;
+	height: 193.04px;
+	border: 1px solid rgba(253.0000001192093,77.00000301003456,77.00000301003456,1);
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .Line16 {
+	position: absolute;
+	left: 221.92000000000002px;
+	top: 379.24px;
+	width: 875.5192578125px;
+	height: 7.6531591796875px;
+	border: 1px solid rgba(253.0000001192093,77.00000301003456,77.00000301003456,1);
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .RateGraph .Line17 {
+	position: absolute;
+	left: 1095.16px;
+	top: 254.6px;
+	width: 219.64000000000001px;
+	height: 132.24px;
+	border: 1px solid rgba(221.00000202655792,67.00000360608101,67.00000360608101,1);
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .TopBar {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1444px;
+	height: 76px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .TopBar .Rectangle19 {
+	position: absolute;
+	left: 38%;
+	top: 0px;
+	transform: translate(-50%, 0);
+	width: 1444px;
+	height: 76px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .TopBar .Group1 {
+	position: absolute;
+	left: 213.56px;
+	top: 19.76px;
+	width: 872.48px;
+	height: 37.24px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .TopBar .Group1 .SearchBarDesktop {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 872.48px;
+	height: 37.24px;
+	border-radius: 22.8px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .TopBar .Group1 .SearchBarDesktop .Rectangle1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,254,254,1.00);
+	border-radius: 22.8px;
+	border: 1px solid rgba(174.25000101327896,161.90729051828384,161.90729051828384,1);
+	box-sizing: border-box;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .TopBar .Group1 .SearchBarDesktop .Vector {
+	position: absolute;
+	left: 840.5600000000001px;
+	top: 8.36px;
+	width: 2.5261324041811846%;
+	height: 57.14285714285714%;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .TopBar .Group1 .FilterDropdownListDesktop {
+	position: absolute;
+	left: 12.92px;
+	top: 8.36px;
+	width: 21.28px;
+	height: 22.04px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .TopBar .Group1 .FilterDropdownListDesktop .Vector_1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .TopBar .TSP3 {
+	position: absolute;
+	left: 17.48px;
+	top: 5.32px;
+	width: 164.92000000000002px;
+	height: 65.36px;
+	object-fit: cover;
+	overflow: hidden;
+	border-radius: 60.04px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .TopBar .Group4 {
+	position: absolute;
+	left: 1102px;
+	top: 15.96px;
+	width: 279.68px;
+	height: 44.08px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .TopBar .Group4 .Rectangle21 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(20,135,255,1.00);
+	border-radius: 22.8px;
+	border: 1px solid rgba(174.25000101327896,161.90729051828384,161.90729051828384,1);
+	box-sizing: border-box;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .TopBar .Group4 .USERNAME {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	color: rgba(255,255,255,1.00);
+	border: 1px solid rgba(0,0,0,1);
+	font-family: Microsoft JhengHei UI;
+	font-size: 18.240000000000002px;
+	font-weight: 700;
+	line-height: 21.375px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .TopBar .Group4 .__1 {
+	position: absolute;
+	left: 122.36px;
+	top: 3.04px;
+	width: 50%;
+	height: 86.20689655172413%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	color: rgba(255,255,255,1.00);
+	font-family: Inter;
+	font-size: 18.240000000000002px;
+	font-weight: 400;
+	line-height: 21.375px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .TopBar .MenuIcon {
+	position: absolute;
+	left: 1397.64px;
+	top: 25.080000000000002px;
+	width: 31.92px;
+	height: 26.6px;
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .TopBar .MenuIcon .Line1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 0%;
+	border: 1px solid rgba(255,255,255,1);
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .TopBar .MenuIcon .Line2 {
+	position: absolute;
+	left: 0px;
+	top: 13.3px;
+	width: 100%;
+	height: 0%;
+	border: 1px solid rgba(255,255,255,1);
+}
+.StoreRateHistoricalPageWithAccount_StoreRateHistoricalPageWithAccount .TopBar .MenuIcon .Line3 {
+	position: absolute;
+	left: 0px;
+	top: 26.6px;
+	width: 100%;
+	height: 0%;
+	border: 1px solid rgba(255,255,255,1);
+}

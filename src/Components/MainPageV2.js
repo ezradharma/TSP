@@ -44,12 +44,9 @@ export default function TestPage () {
 				<div className='Group4'>
 					<div className='Rectangle21'/>
 					<span className='USERNAME'>[USERNAME]</span>
-					<Link to='/mainpagenoaccount'>
-						<span className='_'>|     Sign Out</span>
-					</Link>
 				</div>
 				<img className='TSP3' src = {ImgAsset.FrontPage_TSP3} />
-				<Link to='/mainpagewithaccount'>
+				<Link to='/MainPageV2'>
 					<div className='MenuIcon'>
 						<img className='Line1' src = {ImgAsset.SearchWalmart_Line1} />
 						<img className='Line2' src = {ImgAsset.SearchWalmart_Line2} />
@@ -59,68 +56,52 @@ export default function TestPage () {
 			</div>
 			<div id="main_stores" style={{color: "black"}}>
 				<div>
-				<Link to='/WalmartRatesPage'>
 					<br/>
 					{data.stores[0]}
 					<br/>
 					Best Rate: {data.percents[0]}
-				</Link>
 				</div>
 				<div>
-				<Link to='/AmazonRatesPage'>
 					<br/>
 					{data.stores[1]}
 					<br/>
 					Best Rate: {data.percents[1]}
-				</Link>
 				</div>
 				<div>
-				<Link to='/GapRatesPage'>
 					<br/>
 					{data.stores[2]}
 					<br/>
 					Best Rate: {data.percents[2]}
-				</Link>
 				</div>
 				<div>
-				<Link to='/HotelsComRatesPage'>
 					<br/>
 					{data.stores[3]}
 					<br/>
 					Best Rate: {data.percents[3]}
-				</Link>
-				</div>
+					</div>
 				<div>
-				<Link to='/CostcoRatesPage'>
 					<br/>
 					{data.stores[4]}
 					<br/>
 					Best Rate: {data.percents[4]}
-				</Link>
 				</div>
 				<div>
-				<Link to='/KohlsRatesPage'>
 					<br/>
 					{data.stores[5]}
 					<br/>
 					Best Rate: {data.percents[5]}
-				</Link>
 				</div>
 				<div>
-				<Link to='/HomeDepotRatesPage'>
 					<br/>
 					{data.stores[6]}
 					<br/>
 					Best Rate: {data.percents[6]}
-				</Link>
 				</div>
 				<div>
-				<Link to='/TargetRatesPage'>
 					<br/>
 					{data.stores[7]}
 					<br/>
 					Best Rate: {data.percents[7]}
-				</Link>
 				</div>
 			</div>
 		</div>

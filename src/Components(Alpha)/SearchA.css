@@ -1,0 +1,470 @@
+
+.SearchA_SearchA {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	margin: auto;
+	width: 100%;
+	height: 100vh;
+	overflow: auto;
+	background: rgba(0,0,0,1.00);
+}
+.SearchA_SearchA .Rectangle3 {
+	position: absolute;
+	left: 430.16px;
+	top: 158.84px;
+	width: 583.6800000000001px;
+	height: 127.68px;
+}
+.SearchA_SearchA .Amazon {
+	position: absolute;
+	left: 450.68px;
+	top: 177.84px;
+	width: 96.52px;
+	height: 85.12px;
+	background: rgba(255,255,255,1.00);
+}
+.SearchA_SearchA .Amazon .Vector {
+	position: absolute;
+	left: 20.9467578125px;
+	top: 5.1144140625px;
+	width: 53.48832738681102%;
+	height: 63.90293666294643%;
+}
+.SearchA_SearchA .Amazon .Vector_1 {
+	position: absolute;
+	left: 22.06189453125px;
+	top: 5.471962890625px;
+	width: 53.48832738681102%;
+	height: 63.90293666294643%;
+}
+.SearchA_SearchA .Amazon .Vector_2 {
+	position: absolute;
+	left: 5.8001953125px;
+	top: 60.812802734375px;
+	width: 77.93084092027559%;
+	height: 22.54791259765625%;
+}
+.SearchA_SearchA .Amazon .Vector_3 {
+	position: absolute;
+	left: 9.07435546875px;
+	top: 65.89326171875px;
+	width: 74.53863188976378%;
+	height: 16.579328264508927%;
+}
+.SearchA_SearchA .Amazon .Vector_4 {
+	position: absolute;
+	left: 81.419453125px;
+	top: 57.970966796875004px;
+	width: 9.635672982283465%;
+	height: 18.459211077008927%;
+}
+.SearchA_SearchA .Amazon .Vector_5 {
+	position: absolute;
+	left: 73.5619140625px;
+	top: 65.754658203125px;
+	width: 7.602961983267717%;
+	height: 1.82647705078125%;
+}
+.SearchA_SearchA .Amazon .Vector_6 {
+	position: absolute;
+	left: 12.09654296875px;
+	top: 62.58384765625px;
+	width: 10.739111712598424%;
+	height: 5.551365443638393%;
+}
+.SearchA_SearchA .Amazon .Vector_7 {
+	position: absolute;
+	left: 72.6816796875px;
+	top: 58.105859375px;
+	width: 9.053580216535433%;
+	height: 6.646510532924108%;
+}
+.SearchA_SearchA .Amazon .Vector_8 {
+	position: absolute;
+	left: 72.6809375px;
+	top: 57.97041015625px;
+	width: 18.688484251968504%;
+	height: 18.460736955915177%;
+}
+.SearchA_SearchA .Amazon .Vector_9 {
+	position: absolute;
+	left: 5.799453125px;
+	top: 60.812802734375px;
+	width: 77.93084092027559%;
+	height: 22.54791259765625%;
+}
+.SearchA_SearchA .Amazon_1 {
+	position: absolute;
+	left: 634.6px;
+	top: 202.92000000000002px;
+	width: 174.04px;
+	height: 22.8px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(99,95,95,1.00);
+	font-family: Inter;
+	font-size: 24.32px;
+	font-weight: 700;
+	line-height: 28.5px;
+}
+.SearchA_SearchA .Vector_10 {
+	position: absolute;
+	left: 910.48px;
+	top: 198.36px;
+	width: 2.7894736842105265%;
+	height: 5%;
+}
+.SearchA_SearchA .Rectangle4 {
+	position: absolute;
+	left: 430.16px;
+	top: 314.64px;
+	width: 583.6800000000001px;
+	height: 127.68px;
+}
+.SearchA_SearchA .Rectangle5 {
+	position: absolute;
+	left: 430.16px;
+	top: 475px;
+	width: 583.6800000000001px;
+	height: 127.68px;
+}
+.SearchA_SearchA .Rectangle6 {
+	position: absolute;
+	left: 430.16px;
+	top: 631.5600000000001px;
+	width: 583.6800000000001px;
+	height: 127.68px;
+}
+.SearchA_SearchA .Vector_11 {
+	position: absolute;
+	left: 450.68px;
+	top: 327.56px;
+	width: 6.684210526315789%;
+	height: 10.37037037037037%;
+}
+.SearchA_SearchA .Apple {
+	position: absolute;
+	left: 646px;
+	top: 355.68px;
+	width: 159.6px;
+	height: 24.32px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(99,95,95,1.00);
+	font-family: Inter;
+	font-size: 24.32px;
+	font-weight: 700;
+	line-height: 28.5px;
+}
+.SearchA_SearchA .Vector_12 {
+	position: absolute;
+	left: 910.48px;
+	top: 355.68px;
+	width: 2.7894736842105265%;
+	height: 5%;
+}
+.SearchA_SearchA .Group {
+	position: absolute;
+	left: 450.4758984375px;
+	top: 494.63642578125px;
+	width: 6.684210526315789%;
+	height: 10.37037037037037%;
+}
+.SearchA_SearchA .Group .Vector_13 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+.SearchA_SearchA .Abercrombie {
+	position: absolute;
+	left: 623.2px;
+	top: 524.4px;
+	width: 215.08px;
+	height: 25.080000000000002px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(99,95,95,1.00);
+	font-family: Inter;
+	font-size: 24.32px;
+	font-weight: 700;
+	line-height: 28.5px;
+}
+.SearchA_SearchA .Vector_14 {
+	position: absolute;
+	left: 910.48px;
+	top: 518.32px;
+	width: 2.7894736842105265%;
+	height: 5%;
+}
+.SearchA_SearchA .Group_1 {
+	position: absolute;
+	left: 450.4758984375px;
+	top: 646.2946484375px;
+	width: 6.684210526315789%;
+	height: 10.37037037037037%;
+}
+.SearchA_SearchA .Group_1 .Vector_15 {
+	position: absolute;
+	left: 94.280078125px;
+	top: 56.4826953125px;
+	width: 2.0577017716535435%;
+	height: 6.095668247767857%;
+}
+.SearchA_SearchA .Group_1 .Vector_16 {
+	position: absolute;
+	left: 94.27859375px;
+	top: 57.7295703125px;
+	width: 0.8446881151574803%;
+	height: 3.0875069754464284%;
+}
+.SearchA_SearchA .Group_1 .Vector_17 {
+	position: absolute;
+	left: 92.29398437500001px;
+	top: 56.4826953125px;
+	width: 2.0577017716535435%;
+	height: 6.095668247767857%;
+}
+.SearchA_SearchA .Group_1 .Vector_18 {
+	position: absolute;
+	left: 0px;
+	top: 56.54837890625px;
+	width: 100%;
+	height: 33.566720145089285%;
+}
+.SearchA_SearchA .Group_1 .Vector_19 {
+	position: absolute;
+	left: 10.6392578125px;
+	top: 0px;
+	width: 74.63013656496062%;
+	height: 66.43327985491071%;
+}
+.SearchA_SearchA .Adidas {
+	position: absolute;
+	left: 637.64px;
+	top: 685.52px;
+	width: 175.56px;
+	height: 17.48px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(99,95,95,1.00);
+	font-family: Inter;
+	font-size: 24.32px;
+	font-weight: 700;
+	line-height: 28.5px;
+}
+.SearchA_SearchA .Vector_20 {
+	position: absolute;
+	left: 910.48px;
+	top: 667.28px;
+	width: 2.7894736842105265%;
+	height: 5%;
+}
+.SearchA_SearchA .BestRate7 {
+	position: absolute;
+	left: 680.2px;
+	top: 235.6px;
+	width: 167.96px;
+	height: 28.88px;
+	color: rgba(0,0,0,1.00);
+	font-family: Inter;
+	font-size: 15.2px;
+	font-weight: 400;
+	line-height: 17.8125px;
+}
+.SearchA_SearchA .BestRate5 {
+	position: absolute;
+	left: 680.2px;
+	top: 395.96px;
+	width: 167.96px;
+	height: 28.88px;
+	color: rgba(0,0,0,1.00);
+	font-family: Inter;
+	font-size: 15.2px;
+	font-weight: 400;
+	line-height: 17.8125px;
+}
+.SearchA_SearchA .BestRate4 {
+	position: absolute;
+	left: 680.2px;
+	top: 556.32px;
+	width: 167.96px;
+	height: 30.4px;
+	color: rgba(0,0,0,1.00);
+	font-family: Inter;
+	font-size: 15.2px;
+	font-weight: 400;
+	line-height: 17.8125px;
+}
+.SearchA_SearchA .BestRate11 {
+	position: absolute;
+	left: 680.2px;
+	top: 717.44px;
+	width: 167.96px;
+	height: 30.4px;
+	color: rgba(0,0,0,1.00);
+	font-family: Inter;
+	font-size: 15.2px;
+	font-weight: 400;
+	line-height: 17.8125px;
+}
+.SearchA_SearchA .TopBar {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1444px;
+	height: 76px;
+}
+.SearchA_SearchA .TopBar .Rectangle19 {
+	position: absolute;
+	left: 38%;
+	top: 0px;
+	transform: translate(-50%, 0);
+	width: 1444px;
+	height: 76px;
+}
+.SearchA_SearchA .TopBar .Group1 {
+	position: absolute;
+	left: 213.56px;
+	top: 19.76px;
+	width: 872.48px;
+	height: 37.24px;
+}
+.SearchA_SearchA .TopBar .Group1 .SearchBarDesktop {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 872.48px;
+	height: 37.24px;
+	border-radius: 22.8px;
+}
+.SearchA_SearchA .TopBar .Group1 .SearchBarDesktop .Rectangle1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,254,254,1.00);
+	border-radius: 22.8px;
+	border: 1px solid rgba(174.25000101327896,161.90729051828384,161.90729051828384,1);
+	box-sizing: border-box;
+}
+.SearchA_SearchA .TopBar .Group1 .SearchBarDesktop .Vector_21 {
+	position: absolute;
+	left: 840.5600000000001px;
+	top: 8.36px;
+	width: 2.5261324041811846%;
+	height: 57.14285714285714%;
+}
+.SearchA_SearchA .TopBar .Group1 .FilterDropdownListDesktop {
+	position: absolute;
+	left: 12.92px;
+	top: 8.36px;
+	width: 21.28px;
+	height: 22.04px;
+}
+.SearchA_SearchA .TopBar .Group1 .FilterDropdownListDesktop .Vector_22 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+.SearchA_SearchA .TopBar .Group4 {
+	position: absolute;
+	left: 1102px;
+	top: 15.96px;
+	width: 279.68px;
+	height: 44.08px;
+}
+.SearchA_SearchA .TopBar .Group4 .Rectangle21 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(20,135,255,1.00);
+	border-radius: 22.8px;
+	border: 1px solid rgba(174.25000101327896,161.90729051828384,161.90729051828384,1);
+	box-sizing: border-box;
+}
+.SearchA_SearchA .TopBar .Group4 .USERNAME {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	color: rgba(255,255,255,1.00);
+	border: 1px solid rgba(0,0,0,1);
+	font-family: Microsoft JhengHei UI;
+	font-size: 18.240000000000002px;
+	font-weight: 700;
+	line-height: 21.375px;
+}
+.SearchA_SearchA .TopBar .Group4 ._ {
+	position: absolute;
+	left: 122.36px;
+	top: 3.04px;
+	width: 50%;
+	height: 86.20689655172413%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	color: rgba(255,255,255,1.00);
+	font-family: Inter;
+	font-size: 18.240000000000002px;
+	font-weight: 400;
+	line-height: 21.375px;
+}
+.SearchA_SearchA .TopBar .TSP3 {
+	position: absolute;
+	left: 17.48px;
+	top: 5.32px;
+	width: 164.92000000000002px;
+	height: 65.36px;
+	object-fit: cover;
+	overflow: hidden;
+	border-radius: 60.04px;
+}
+.SearchA_SearchA .TopBar .MenuIcon {
+	position: absolute;
+	left: 1397.64px;
+	top: 25.080000000000002px;
+	width: 31.92px;
+	height: 26.6px;
+}
+.SearchA_SearchA .TopBar .MenuIcon .Line1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 0%;
+	border: 1px solid rgba(255,255,255,1);
+}
+.SearchA_SearchA .TopBar .MenuIcon .Line2 {
+	position: absolute;
+	left: 0px;
+	top: 13.3px;
+	width: 100%;
+	height: 0%;
+	border: 1px solid rgba(255,255,255,1);
+}
+.SearchA_SearchA .TopBar .MenuIcon .Line3 {
+	position: absolute;
+	left: 0px;
+	top: 26.6px;
+	width: 100%;
+	height: 0%;
+	border: 1px solid rgba(255,255,255,1);
+}

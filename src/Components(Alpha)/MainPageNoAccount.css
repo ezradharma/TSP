@@ -1,0 +1,526 @@
+
+.MainPageNoAccount_MainPageNoAccount {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	margin: auto;
+	width: 100%;
+	height: 100vh;
+	overflow: auto;
+	background: rgba(0,0,0,1.00);
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 {
+	position: absolute;
+	left: 0px;
+	top: 120.08px;
+	width: 1430.32px;
+	height: 744.8px;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .Rectangle31 {
+	position: absolute;
+	left: 47.88px;
+	top: 45.6px;
+	width: 310.08px;
+	height: 264.48px;
+	background: rgba(137,243,226,1.00);
+	border-radius: 29.64px;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .Rectangle32 {
+	position: absolute;
+	left: 387.6px;
+	top: 45.6px;
+	width: 310.08px;
+	height: 264.48px;
+	background: rgba(137,243,226,1.00);
+	border-radius: 29.64px;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .iconstarempty {
+	position: absolute;
+	left: 625.48px;
+	top: 240.92000000000002px;
+	width: 49.4px;
+	height: 41.8px;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .iconstarempty .Vector {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .Gap {
+	position: absolute;
+	left: 443.84000000000003px;
+	top: 199.12px;
+	width: 206.72px;
+	height: 53.2px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(0,0,0,1.00);
+	font-family: Inter;
+	font-size: 27.36px;
+	font-weight: 400;
+	line-height: 32.0625px;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .Rectangle34 {
+	position: absolute;
+	left: 1104.28px;
+	top: 45.6px;
+	width: 310.08px;
+	height: 264.48px;
+	background: rgba(137,243,226,1.00);
+	border-radius: 29.64px;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .iconstarempty_1 {
+	position: absolute;
+	left: 1348.24px;
+	top: 240.92000000000002px;
+	width: 49.4px;
+	height: 41.8px;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .iconstarempty_1 .Vector_1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .HomeDepot {
+	position: absolute;
+	left: 1166.6px;
+	top: 199.12px;
+	width: 206.72px;
+	height: 53.2px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(0,0,0,1.00);
+	font-family: Inter;
+	font-size: 27.36px;
+	font-weight: 400;
+	line-height: 32.0625px;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .Rectangle33 {
+	position: absolute;
+	left: 747.84px;
+	top: 45.6px;
+	width: 310.08px;
+	height: 264.48px;
+	background: rgba(137,243,226,1.00);
+	border-radius: 29.64px;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .iconstarempty_2 {
+	position: absolute;
+	left: 981.16px;
+	top: 240.92000000000002px;
+	width: 49.4px;
+	height: 41.8px;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .iconstarempty_2 .Vector_2 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .Costco {
+	position: absolute;
+	left: 799.52px;
+	top: 199.12px;
+	width: 206.72px;
+	height: 53.2px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(0,0,0,1.00);
+	font-family: Inter;
+	font-size: 27.36px;
+	font-weight: 400;
+	line-height: 32.0625px;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .Rectangle36 {
+	position: absolute;
+	left: 392.16px;
+	top: 346.56px;
+	width: 310.08px;
+	height: 264.48px;
+	background: rgba(137,243,226,1.00);
+	border-radius: 29.64px;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .iconstarempty_3 {
+	position: absolute;
+	left: 625.48px;
+	top: 551px;
+	width: 49.4px;
+	height: 41.8px;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .iconstarempty_3 .Vector_3 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .Hotelscom {
+	position: absolute;
+	left: 439.28000000000003px;
+	top: 510.72px;
+	width: 206.72px;
+	height: 53.2px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(0,0,0,1.00);
+	font-family: Inter;
+	font-size: 27.36px;
+	font-weight: 400;
+	line-height: 32.0625px;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .Rectangle37 {
+	position: absolute;
+	left: 1104.28px;
+	top: 346.56px;
+	width: 310.08px;
+	height: 264.48px;
+	background: rgba(137,243,226,1.00);
+	border-radius: 29.64px;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .iconstarempty_4 {
+	position: absolute;
+	left: 1348.24px;
+	top: 551px;
+	width: 49.4px;
+	height: 41.8px;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .iconstarempty_4 .Vector_4 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .Target {
+	position: absolute;
+	left: 1155.96px;
+	top: 510.72px;
+	width: 206.72px;
+	height: 53.2px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(0,0,0,1.00);
+	font-family: Inter;
+	font-size: 27.36px;
+	font-weight: 400;
+	line-height: 32.0625px;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .Rectangle38 {
+	position: absolute;
+	left: 747.84px;
+	top: 346.56px;
+	width: 310.08px;
+	height: 264.48px;
+	background: rgba(137,243,226,1.00);
+	border-radius: 29.64px;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .iconstarempty_5 {
+	position: absolute;
+	left: 981.16px;
+	top: 551px;
+	width: 49.4px;
+	height: 41.8px;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .iconstarempty_5 .Vector_5 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .Kohls {
+	position: absolute;
+	left: 791.92px;
+	top: 510.72px;
+	width: 206.72px;
+	height: 53.2px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(0,0,0,1.00);
+	font-family: Inter;
+	font-size: 27.36px;
+	font-weight: 400;
+	line-height: 32.0625px;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .Amazon1 {
+	position: absolute;
+	left: 136.04px;
+	top: 66.88px;
+	width: 133px;
+	height: 110.96000000000001px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .Walmart {
+	position: absolute;
+	left: 47.88px;
+	top: 346.56px;
+	width: 310.08px;
+	height: 264.48px;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .Walmart .Rectangle35 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 310.08px;
+	height: 264.48px;
+	background: rgba(137,243,226,1.00);
+	border-radius: 29.64px;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .Walmart .iconstarempty_6 {
+	position: absolute;
+	left: 229.52px;
+	top: 204.44px;
+	width: 49.4px;
+	height: 41.8px;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .Walmart .iconstarempty_6 .Vector_6 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .Walmart .Walmart_1 {
+	position: absolute;
+	left: 47.88px;
+	top: 164.16px;
+	width: 206.72px;
+	height: 53.2px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(0,0,0,1.00);
+	font-family: Inter;
+	font-size: 27.36px;
+	font-weight: 400;
+	line-height: 32.0625px;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .Walmart .Walmart1 {
+	position: absolute;
+	left: 85.12px;
+	top: 29.64px;
+	width: 131.48px;
+	height: 113.24px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .Costco1 {
+	position: absolute;
+	left: 837.52px;
+	top: 66.88px;
+	width: 139.08px;
+	height: 110.96000000000001px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .HomeDepot1 {
+	position: absolute;
+	left: 1198.52px;
+	top: 66.88px;
+	width: 142.88px;
+	height: 110.96000000000001px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .GapLogo1 {
+	position: absolute;
+	left: 475.76px;
+	top: 66.88px;
+	width: 133px;
+	height: 106.4px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .Hotels1 {
+	position: absolute;
+	left: 475.76px;
+	top: 376.2px;
+	width: 133px;
+	height: 113.24px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .Target21 {
+	position: absolute;
+	left: 1200.04px;
+	top: 372.4px;
+	width: 139.08px;
+	height: 106.4px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .KholsLogo1 {
+	position: absolute;
+	left: 832.2px;
+	top: 376.2px;
+	width: 144.4px;
+	height: 113.24px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .Amazon {
+	position: absolute;
+	left: 99.56px;
+	top: 199.12px;
+	width: 206.72px;
+	height: 53.2px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(0,0,0,1.00);
+	font-family: Inter;
+	font-size: 27.36px;
+	font-weight: 400;
+	line-height: 32.0625px;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .iconstarempty_7 {
+	position: absolute;
+	left: 278.92px;
+	top: 240.92000000000002px;
+	width: 49.4px;
+	height: 41.8px;
+}
+.MainPageNoAccount_MainPageNoAccount .Frame1 .iconstarempty_7 .Vector_7 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+.MainPageNoAccount_MainPageNoAccount .Rectangle19 {
+	position: absolute;
+	left: 38%;
+	top: 0px;
+	transform: translate(-50%, 0);
+	width: 1444px;
+	height: 76px;
+}
+.MainPageNoAccount_MainPageNoAccount .MenuIcon {
+	position: absolute;
+	margin-left: 1851px;
+	margin-right: 19px;
+	width: 22.8px;
+	height: 22.8px;
+}
+.MainPageNoAccount_MainPageNoAccount .MenuIcon .Line1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 0%;
+	border: 1px solid rgba(255,255,255,1);
+}
+.MainPageNoAccount_MainPageNoAccount .MenuIcon .Line2 {
+	position: absolute;
+	left: 0px;
+	top: 11.4px;
+	width: 100%;
+	height: 0%;
+	border: 1px solid rgba(255,255,255,1);
+}
+.MainPageNoAccount_MainPageNoAccount .MenuIcon .Line3 {
+	position: absolute;
+	left: 0px;
+	top: 22.8px;
+	width: 100%;
+	height: 0%;
+	border: 1px solid rgba(255,255,255,1);
+}
+.MainPageNoAccount_MainPageNoAccount .Group1 {
+	position: absolute;
+	left: 213.56px;
+	top: 19.76px;
+	width: 875.52px;
+	height: 37.24px;
+}
+.MainPageNoAccount_MainPageNoAccount .Group1 .Rectangle20 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,254,254,1.00);
+	border-radius: 22.8px;
+	border: 1px solid rgba(174.25000101327896,161.90729051828384,161.90729051828384,1);
+	box-sizing: border-box;
+}
+.MainPageNoAccount_MainPageNoAccount .Group1 .Vector_8 {
+	position: absolute;
+	left: 847.4px;
+	top: 8.36px;
+	width: 2.169969346788194%;
+	height: 51.02539451754823%;
+}
+.MainPageNoAccount_MainPageNoAccount .Group2 {
+	position: absolute;
+	left: 1102px;
+	top: 15.96px;
+	width: 279.68px;
+	height: 44.08px;
+}
+.MainPageNoAccount_MainPageNoAccount .Group2 .Rectangle21 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(20,135,255,1.00);
+	border-radius: 22.8px;
+	border: 1px solid rgba(174.25000101327896,161.90729051828384,161.90729051828384,1);
+	box-sizing: border-box;
+}
+.MainPageNoAccount_MainPageNoAccount .Group2 .LogIn {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 279.68px;
+	height: 44.08px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	color: rgba(255,255,255,1.00);
+	border: 1px solid rgba(0,0,0,1);
+	font-family: Microsoft JhengHei UI;
+	font-size: 18.240000000000002px;
+	font-weight: 700;
+	line-height: 21.375px;
+}
+.MainPageNoAccount_MainPageNoAccount .TSP3 {
+	position: absolute;
+	left: 17.48px;
+	top: 5.32px;
+	width: 164.92000000000002px;
+	height: 65.36px;
+	object-fit: cover;
+	overflow: hidden;
+	border-radius: 60.04px;
+}
+.MainPageNoAccount_MainPageNoAccount .FilterDropdownListDesktop {
+	visibility: hidden;
+	position: absolute;
+	left: 228.76px;
+	top: 27.36px;
+	width: 21.28px;
+	height: 22.04px;
+}
+.MainPageNoAccount_MainPageNoAccount .FilterDropdownListDesktop .Vector_9 {
+	visibility: hidden;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
