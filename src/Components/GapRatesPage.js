@@ -3,6 +3,7 @@ import './SearchWalmart.css'
 import './style.css'
 import ImgAsset from '../public'
 import ReactEcharts from "echarts-for-react"
+import { FaGreaterThan } from "react-icons/fa";
 import {Link} from 'react-router-dom'
 
 export default function GapRatePage () {
@@ -12,7 +13,8 @@ export default function GapRatePage () {
 		'top5_platforms': '',
         'percents': 5,
         'platforms': 'platform_holder',
-		'links': ''
+		'links': '',
+        'imgs': ''
     });
 
 	useEffect(() => {
@@ -23,7 +25,8 @@ export default function GapRatePage () {
 				'top5_platforms': data.top5_platforms,
 				'percents': data.percents,
 				'platforms': data.platforms,
-				'links': data.links
+				'links': data.links,
+                'imgs': data.imgs
 			})
 			console.log(data)
 		});
@@ -106,43 +109,43 @@ export default function GapRatePage () {
 			<div id="wrap">
             <div class="reward-plats container center">
                 <div>
-                    <img src={ImgAsset.StoreRateHistoricalPageWithAccount_ServiceLogo} />
+                <img src={data.imgs[0]} />
                     <span>{data.top5_platforms[0]}</span><br />
                     <span>Best Rates: {data.top5_percents[0]}%</span>
                     <a href={data.links[0]}>
-                        <i class='fas'>&#xf105;</i>
+                        <h1><FaGreaterThan style={{fontSize: '50px', float: 'right', marginTop: '-90px'}}/></h1>
                     </a>
                 </div>
                 <div>
-                    <img src={ImgAsset.StoreRateHistoricalPageWithAccount_ServiceLogo_1} />
+                <img src={data.imgs[1]} />
                     <span>{data.top5_platforms[1]}</span><br />
                     <span>Best Rates: {data.top5_percents[1]}%</span>
                     <a href={data.links[1]}>
-                        <i class='fas'>&#xf105;</i>
+                        <h1><FaGreaterThan style={{fontSize: '50px', float: 'right', marginTop: '-90px'}}/></h1>
                     </a>
                 </div>
                 <div>
-                    <img src={ImgAsset.StoreRateHistoricalPageWithAccount_ServiceLogo_2} />
+                <img src={data.imgs[2]} />
                     <span>{data.top5_platforms[2]}</span><br />
                     <span>Best Rates: {data.top5_percents[2]}%</span>
                     <a href={data.links[2]}>
-                        <i class='fas'>&#xf105;</i>
+                        <h1><FaGreaterThan style={{fontSize: '50px', float: 'right', marginTop: '-90px'}}/></h1>
                     </a>
                 </div>
                 <div>
-                    <img src={ImgAsset.StoreRateHistoricalPageWithAccount_ServiceLogo_3} />
+                <img src={data.imgs[3]} />
                     <span>{data.top5_platforms[3]}</span><br />
                     <span>Best Rates: {data.top5_percents[3]}%</span>
                     <a href={data.links[3]}>
-                        <i class='fas'>&#xf105;</i>
+                        <h1><FaGreaterThan style={{fontSize: '50px', float: 'right', marginTop: '-90px'}}/></h1>
                     </a>
                     </div>
                 <div>
-                    <img src={ImgAsset.StoreRateHistoricalPageWithAccount_ServiceLogo_4} />
+                <img src={data.imgs[4]} />
                     <span>{data.top5_platforms[4]}</span><br />
                     <span>Best Rates: {data.top5_percents[4]}%</span>
                     <a href={data.links[4]}>
-                        <i class='fas'>&#xf105;</i>
+                        <h1><FaGreaterThan style={{fontSize: '50px', float: 'right', marginTop: '-90px'}}/></h1>
                     </a>
                 </div>
                 </div>

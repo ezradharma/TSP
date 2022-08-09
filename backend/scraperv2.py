@@ -130,6 +130,7 @@ def ratepg7():
     rates = []
     providers = []
     links = []
+    imgs = []
     top5_rates = []
     top5_stores = []
 
@@ -157,6 +158,8 @@ def ratepg7():
         for cell3 in row.find_elements_by_tag_name('td.l.lo a'):
             # print(cell3.get_attribute('href'))
             links.append(cell3.get_attribute('href'))
+        for cell4 in row.find_elements_by_tag_name('td.l.ro'):
+            imgs.append(cell4.find_element_by_css_selector('a img').get_attribute("src"))
 
     x = len(rates)
     if x <= 5:
@@ -191,7 +194,8 @@ def ratepg7():
         'top5_platforms': top5_stores,
         'percents': send_rates,
         'platforms': send_stores,
-        'links': links
+        'links': links,
+        'imgs': imgs
     })
 
 @app.route('/rates/hotelscom')
@@ -201,6 +205,7 @@ def ratepg6():
     rates = []
     providers = []
     links = []
+    imgs = []
     top5_rates = []
     top5_stores = []
 
@@ -228,6 +233,8 @@ def ratepg6():
         for cell3 in row.find_elements_by_tag_name('td.l.lo a'):
             # print(cell3.get_attribute('href'))
             links.append(cell3.get_attribute('href'))
+        for cell4 in row.find_elements_by_tag_name('td.l.ro'):
+            imgs.append(cell4.find_element_by_css_selector('a img').get_attribute("src"))
 
     x = len(rates)
     if x <= 5:
@@ -262,7 +269,8 @@ def ratepg6():
         'top5_platforms': top5_stores,
         'percents': send_rates,
         'platforms': send_stores,
-        'links': links
+        'links': links,
+        'imgs': imgs
     })
 
 @app.route('/rates/homedepot')
@@ -272,6 +280,7 @@ def ratepg5():
     rates = []
     providers = []
     links = []
+    imgs = []
     top5_rates = []
     top5_stores = []
 
@@ -299,6 +308,8 @@ def ratepg5():
         for cell3 in row.find_elements_by_tag_name('td.l.lo a'):
             # print(cell3.get_attribute('href'))
             links.append(cell3.get_attribute('href'))
+        for cell4 in row.find_elements_by_tag_name('td.l.ro'):
+            imgs.append(cell4.find_element_by_css_selector('a img').get_attribute("src"))
 
     x = len(rates)
     if x <= 5:
@@ -333,7 +344,8 @@ def ratepg5():
         'top5_platforms': top5_stores,
         'percents': send_rates,
         'platforms': send_stores,
-        'links': links
+        'links': links,
+        'imgs': imgs
     })
 
 @app.route('/rates/kohls')
@@ -343,6 +355,7 @@ def ratepg4():
     rates = []
     providers = []
     links = []
+    imgs = []
     top5_rates = []
     top5_stores = []
 
@@ -370,6 +383,8 @@ def ratepg4():
         for cell3 in row.find_elements_by_tag_name('td.l.lo a'):
             # print(cell3.get_attribute('href'))
             links.append(cell3.get_attribute('href'))
+        for cell4 in row.find_elements_by_tag_name('td.l.ro'):
+            imgs.append(cell4.find_element_by_css_selector('a img').get_attribute("src"))
 
     x = len(rates)
     if x <= 5:
@@ -404,7 +419,8 @@ def ratepg4():
         'top5_platforms': top5_stores,
         'percents': send_rates,
         'platforms': send_stores,
-        'links': links
+        'links': links,
+        'imgs': imgs
     })
 
 @app.route('/rates/gap')
@@ -414,6 +430,7 @@ def ratepg3():
     rates = []
     providers = []
     links = []
+    imgs = []
     top5_rates = []
     top5_stores = []
 
@@ -441,6 +458,8 @@ def ratepg3():
         for cell3 in row.find_elements_by_tag_name('td.l.lo a'):
             # print(cell3.get_attribute('href'))
             links.append(cell3.get_attribute('href'))
+        for cell4 in row.find_elements_by_tag_name('td.l.ro'):
+            imgs.append(cell4.find_element_by_css_selector('a img').get_attribute("src"))
 
     x = len(rates)
     if x <= 5:
@@ -475,7 +494,8 @@ def ratepg3():
         'top5_platforms': top5_stores,
         'percents': send_rates,
         'platforms': send_stores,
-        'links': links
+        'links': links,
+        'imgs': imgs
     })
 
 @app.route('/rates/costco')
@@ -485,6 +505,7 @@ def ratepg2():
     rates = []
     providers = []
     links = []
+    imgs = []
     top5_rates = []
     top5_stores = []
 
@@ -512,6 +533,8 @@ def ratepg2():
         for cell3 in row.find_elements_by_tag_name('td.l.lo a'):
             # print(cell3.get_attribute('href'))
             links.append(cell3.get_attribute('href'))
+        for cell4 in row.find_elements_by_tag_name('td.l.ro'):
+            imgs.append(cell4.find_element_by_css_selector('a img').get_attribute("src"))
 
     x = len(rates)
     if x <= 5:
@@ -546,7 +569,8 @@ def ratepg2():
         'top5_platforms': top5_stores,
         'percents': send_rates,
         'platforms': send_stores,
-        'links': links
+        'links': links,
+        'imgs': imgs
     })
 
 @app.route('/rates/amazon')
@@ -556,6 +580,7 @@ def ratepg1():
     rates = []
     providers = []
     links = []
+    imgs = []
     top5_rates = []
     top5_stores = []
 
@@ -583,6 +608,8 @@ def ratepg1():
         for cell3 in row.find_elements_by_tag_name('td.l.lo a'):
             # print(cell3.get_attribute('href'))
             links.append(cell3.get_attribute('href'))
+        for cell4 in row.find_elements_by_tag_name('td.l.ro'):
+            imgs.append(cell4.find_element_by_css_selector('a img').get_attribute("src"))
 
     x = len(rates)
     if x <= 5:
@@ -617,7 +644,8 @@ def ratepg1():
         'top5_platforms': top5_stores,
         'percents': send_rates,
         'platforms': send_stores,
-        'links': links
+        'links': links,
+        'imgs': imgs
     })
 
 @app.route('/rates/walmart')
@@ -629,6 +657,7 @@ def ratepg0():
     links = []
     top5_rates = []
     top5_stores = []
+    imgs = []
 
     tbody = driver.find_element_by_css_selector('div.half.fl table tbody')
 
@@ -654,6 +683,8 @@ def ratepg0():
         for cell3 in row.find_elements_by_tag_name('td.l.lo a'):
             # print(cell3.get_attribute('href'))
             links.append(cell3.get_attribute('href'))
+        for cell4 in row.find_elements_by_tag_name('td.l.ro'):
+            imgs.append(cell4.find_element_by_css_selector('a img').get_attribute("src"))
 
     x = len(rates)
     if x <= 5:
@@ -688,7 +719,8 @@ def ratepg0():
         'top5_platforms': top5_stores,
         'percents': send_rates,
         'platforms': send_stores,
-        'links': links
+        'links': links,
+        'imgs': imgs
     })
 
 
@@ -736,7 +768,7 @@ def home_data():
     t = driver.find_element_by_css_selector('div.half.fl table tbody')
 
     for row in t.find_elements_by_tag_name('tr'):
-        for cell2 in row.find_elements_by_css_selector('ra0'):
+        for cell2 in row.find_elements_by_css_selector('td.l span#ra0'):
             rates.append(cell2.text)
             providers.append('Walmart')
 
