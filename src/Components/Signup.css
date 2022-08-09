@@ -84,6 +84,54 @@
 	font-weight: 400;
 	line-height: 10.6875px;
 }
+.Signup_Signup .FieldBar_2 .Password {
+	position: absolute;
+	left: 29.44146484375px;
+	top: 7.336337890625px;
+	width: 252.21498046875px;
+	height: 22.67591552734375px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	color: rgba(0,0,0,1.00);
+	font-family: Inter;
+	font-size: 9.120000000000001px;
+	font-weight: 400;
+	line-height: 10.6875px;
+}
+.Signup_Signup .FieldBar .Username {
+	position: absolute;
+	left: 29.44146484375px;
+	top: 7.336337890625px;
+	width: 252.21498046875px;
+	height: 22.67591552734375px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	color: rgba(0,0,0,1.00);
+	font-family: Inter;
+	font-size: 9.120000000000001px;
+	font-weight: 400;
+	line-height: 10.6875px;
+}
+.Signup_Signup .FieldBar_3 .Signup_1 {
+	position: absolute;
+	left: -40px;
+	top: 7.336337890625px;
+	width: 252.21498046875px;
+	height: 22.67591552734375px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	color: rgba(0,0,0,1.00);
+	font-family: Inter;
+	font-size: 9.120000000000001px;
+	font-weight: 400;
+	line-height: 10.6875px;
+}
 .Signup_Signup .FieldBar_2 {
 	position: absolute;
 	left: 557.84px;
@@ -125,22 +173,7 @@
 	font-weight: 400;
 	line-height: 10.6875px;
 }
-.Signup_Signup .Username {
-	position: absolute;
-	left: 618.64px;
-	top: 335.92px;
-	width: 195.32px;
-	height: 25.84px;
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	align-items: center;
-	color: rgba(0,0,0,1.00);
-	font-family: Inter;
-	font-size: 9.120000000000001px;
-	font-weight: 400;
-	line-height: 10.6875px;
-}
+
 .Signup_Signup .FieldBar_3 {
 	position: absolute;
 	left: 632.32px;

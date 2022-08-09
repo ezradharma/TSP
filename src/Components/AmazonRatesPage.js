@@ -6,7 +6,7 @@ import ReactEcharts from "echarts-for-react"
 import { FaGreaterThan } from "react-icons/fa";
 import {Link} from 'react-router-dom'
 
-export default function HotelsComRatePage () {
+export default function AmazonRatePage () {
 
 	const [data, setArr] = useState({
         'top5_percents': '',
@@ -18,7 +18,7 @@ export default function HotelsComRatePage () {
     });
 
 	useEffect(() => {
-        fetch("/rates/hotelscom").then(res => res.json())
+        fetch("/rates/amazon").then(res => res.json())
 		.then(data => {
 			setArr({
                 'top5_percents': data.top5_percents,
@@ -94,7 +94,7 @@ export default function HotelsComRatePage () {
                 <span>, </span>
                 <span id="plat5">{data.platforms[4]}</span>
                 <br></br>
-                <span>Highest Cashback Rates for Hotels.com: </span>
+                <span>Highest Cashback Rates for Amazon: </span>
                 <span id="num1">{data.top5_percents[0]}</span>
                 <span>%, </span>
                 <span id="num2">{data.top5_percents[1]}</span>

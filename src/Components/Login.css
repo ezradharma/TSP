@@ -9,6 +9,8 @@
 	overflow: auto;
 	background: rgba(0,104,213,1.00);
 }
+
+
 .Login_Login .TSP3 {
 	position: absolute;
 	left: 534.28px;
@@ -36,6 +38,7 @@
 	border: 1px solid rgba(174.25000101327896,161.90729051828384,161.90729051828384,1);
 	box-sizing: border-box;
 }
+
 .Login_Login .FieldBar .Subtract {
 	position: absolute;
 	left: 295.396005859375px;
@@ -86,8 +89,24 @@
 }
 .Login_Login .Username {
 	position: absolute;
-	left: 618.64px;
+	left: 500px;
 	top: 335.92px;
+	width: 195.32px;
+	height: 25.84px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	color: rgba(0,0,0,1.00);
+	font-family: Inter;
+	font-size: 9.120000000000001px;
+	font-weight: 400;
+	line-height: 10.6875px;
+}
+.Login_Login .Password {
+	position: absolute;
+	left: 540px;
+	top: 400px;
 	width: 195.32px;
 	height: 25.84px;
 	display: flex;
@@ -125,6 +144,8 @@
 	width: 13.38498046875px;
 	height: 19.72103515625px;
 }
+
+
 .Login_Login .Login_1 {
 	position: absolute;
 	left: 666.52px;
@@ -155,3 +176,4 @@
 	font-weight: 400;
 	line-height: 28.5px;
 }
+

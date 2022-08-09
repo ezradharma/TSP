@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import HomePage from '../Components/index';
 import FrontPage from '../Components/FrontPage';
-import SplashPage from '../Components/SplashPage';
+
 import MainPageNoAccount from '../Components/MainPageNoAccount';
 import SearchWalmart from '../Components/SearchWalmart';
 import SearchA from '../Components/SearchA';
@@ -19,6 +19,12 @@ import GapRatesPage from '../Components/GapRatesPage';
 import HomeDepotRatesPage from '../Components/HomeDepotRatesPage';
 import KohlsRatesPage from '../Components/KohlsRatesPage';
 import HotelsComRatesPage from '../Components/HotelsComRatesPage';
+import TargetRatesPage from '../Components/TargetRatesPage';
+import CostcoRatesPage from '../Components/CostcoRatesPage';
+import AmazonRatesPage from '../Components/AmazonRatesPage';
+import MainPageV2 from '../Components/MainPageV2';
+// import TestRatePage from '../Components/TestRatePage';
+// import RatePage from '../Components/RatePage';
 
 const RouterDOM = () => {
 	return (
@@ -26,7 +32,6 @@ const RouterDOM = () => {
 			<Switch>
 				<Route exact path="/"><HomePage /></Route>
 				<Route exact path="/frontpage"><FrontPage /></Route>
-				<Route exact path="/splashpage"><SplashPage /></Route>
 				<Route exact path="/mainpagenoaccount"><MainPageNoAccount /></Route>
 				<Route exact path="/searchwalmart"><SearchWalmart /></Route>
 				<Route exact path="/searcha"><SearchA /></Route>
@@ -43,6 +48,12 @@ const RouterDOM = () => {
 				<Route exact path="/homedepotratespage"><HomeDepotRatesPage /></Route>
 				<Route exact path="/kohlsratespage"><KohlsRatesPage /></Route>
 				<Route exact path="/hotelscomratespage"><HotelsComRatesPage /></Route>
+				<Route exact path="/targetratespage"><TargetRatesPage /></Route>
+				<Route exact path="/costcoratespage"><CostcoRatesPage /></Route>
+				<Route exact path="/amazonratespage"><AmazonRatesPage /></Route>
+				 <Route exact path="/mainpagev2"><MainPageV2 /></Route>
+				{/* <Route exact path="/testratepage"><TestRatePage /></Route>
+				<Route exact path="/ratepage"><RatePage /></Route> */}
 			</Switch>
 		</Router>
 	);

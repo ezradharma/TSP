@@ -1,13 +1,56 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import './SearchWalmart.css'
 import './style.css'
 import ImgAsset from '../public'
+import ReactEcharts from "echarts-for-react"
+import { FaGreaterThan } from "react-icons/fa";
 import {Link} from 'react-router-dom'
 
-export default function WalmartRates () {
+export default function WalmartRatePage () {
+
+	const [data, setArr] = useState({
+        'top5_percents': '',
+		'top5_platforms': '',
+        'percents': 5,
+        'platforms': 'platform_holder',
+		'links': '',
+        'imgs': ''
+    });
+
+	useEffect(() => {
+        fetch("/rates/walmart").then(res => res.json())
+		.then(data => {
+			setArr({
+                'top5_percents': data.top5_percents,
+				'top5_platforms': data.top5_platforms,
+				'percents': data.percents,
+				'platforms': data.platforms,
+				'links': data.links,
+                'imgs': data.imgs
+			})
+			console.log(data)
+		});
+	}, []);
+
+	const option = {
+		xAxis: {
+			type: 'category',
+			data: data.top5_platforms
+		},
+		yAxis: {
+			type: 'value'
+		},
+		series: [
+			{
+			data: data.top5_percents,
+			type: 'bar'
+			}
+		]
+	}; 
+
     return (
         <>
-        <div className='SearchWalmart_SearchWalmart'>
+		<div className='SearchWalmart_SearchWalmart'>
         	<div className='TopBar'>
 				<img className='Rectangle19' src = {ImgAsset.SearchWalmart_Rectangle19} />
 				<div className='Group1'>
@@ -39,52 +82,75 @@ export default function WalmartRates () {
 					</div>
 				</Link>
 			</div>
-            <div id="wrap">
-            <img class="Charts" src={ImgAsset.WalmartGraph} />
+            <div style={{marginTop: '100px', color: "white"}}>
+                <span>Reward Platforms w/ Highest Cashback Rates: </span>
+                <span id="plat1">{data.platforms[0]}</span>
+                <span>, </span>
+                <span id="plat2">{data.platforms[1]}</span>
+                <span>, </span>
+                <span id="plat3">{data.platforms[2]}</span>
+                <span>, </span>
+                <span id="plat4">{data.platforms[3]}</span>
+                <span>, </span>
+                <span id="plat5">{data.platforms[4]}</span>
+                <br></br>
+                <span>Highest Cashback Rates for Walmart: </span>
+                <span id="num1">{data.top5_percents[0]}</span>
+                <span>%, </span>
+                <span id="num2">{data.top5_percents[1]}</span>
+                <span>%, </span>
+                <span id="num3">{data.top5_percents[2]}</span>
+                <span>%, </span>
+                <span id="num4">{data.top5_percents[3]}</span>
+                <span>%, </span>
+                <span id="num5">{data.top5_percents[4]}</span><span>%</span>
+            </div>
+			<ReactEcharts option={option} />
+			<div id="wrap">
             <div class="reward-plats container center">
                 <div>
-                    <img src={ImgAsset.StoreRateHistoricalPageWithAccount_ServiceLogo} />
-                    <span>Hoopla Doopla</span><br />
-                    <span>Best Rates: 5%</span>
-                    <a href="https://hoopladoopla.com/brand/walmart?ref=VmQlavLryexqNoGMBARzx7AwYWkZJd5bj4z2EnRD">
-                        <i class='fas'>&#xf105;</i>
+                    <img src={data.imgs[0]} />
+                    <span>{data.top5_platforms[0]}</span><br />
+                    <span>Best Rates: {data.top5_percents[0]}%</span>
+                    <a href={data.links[0]}>
+                        <h1><FaGreaterThan style={{fontSize: '50px', float: 'right', marginTop: '-90px'}}/></h1>
                     </a>
                 </div>
                 <div>
-                    <img src={ImgAsset.StoreRateHistoricalPageWithAccount_ServiceLogo_1} />
-                    <span>MaxRebates</span><br />
-                    <span>Best Rates: 4%</span>
-                    <a href="https://www.maxrebates.com/us/stores/Walmart?t=cashbackmonitor&invited_code=8251963">
-                        <i class='fas'>&#xf105;</i>
+                <img src={data.imgs[1]} />
+                    <span>{data.top5_platforms[1]}</span><br />
+                    <span>Best Rates: {data.top5_percents[1]}%</span>
+                    <a href={data.links[1]}>
+                        <h1><FaGreaterThan style={{fontSize: '50px', float: 'right', marginTop: '-90px'}}/></h1>
                     </a>
                 </div>
                 <div>
-                    <img src={ImgAsset.StoreRateHistoricalPageWithAccount_ServiceLogo_2} />
-                    <span>rebatesme</span><br />
-                    <span>Best Rates: 4%</span>
-                    <a href="https://www.rebatesme.com/en/stores/walmart-us?uid=101955">
-                        <i class='fas'>&#xf105;</i>
+                <img src={data.imgs[2]} />
+                    <span>{data.top5_platforms[2]}</span><br />
+                    <span>Best Rates: {data.top5_percents[2]}%</span>
+                    <a href={data.links[2]}>
+                        <h1><FaGreaterThan style={{fontSize: '50px', float: 'right', marginTop: '-90px'}}/></h1>
                     </a>
                 </div>
                 <div>
-                    <img src={ImgAsset.StoreRateHistoricalPageWithAccount_ServiceLogo_3} />
-                    <span>Dollar Dig</span><br />
-                    <span>Best Rates: 4%</span>
-                    <a href="https://www.dollardig.com/store/walmart-cashback/?ref=1000010652">
-                        <i class='fas'>&#xf105;</i>
+                <img src={data.imgs[3]} />
+                    <span>{data.top5_platforms[3]}</span><br />
+                    <span>Best Rates: {data.top5_percents[3]}%</span>
+                    <a href={data.links[3]}>
+                        <h1><FaGreaterThan style={{fontSize: '50px', float: 'right', marginTop: '-90px'}}/></h1>
                     </a>
                     </div>
                 <div>
-                    <img src={ImgAsset.StoreRateHistoricalPageWithAccount_ServiceLogo_4} />
-                    <span>GoCashBack</span><br />
-                    <span>Best Rates: 3%</span>
-                    <a href="https://www.gocashback.com/r/1360354?url=https%3A%2F%2Fwww.gocashback.com%2Fstores%2Fwalmart">
-                        <i class='fas'>&#xf105;</i>
+                <img src={data.imgs[4]} />
+                    <span>{data.top5_platforms[4]}</span><br />
+                    <span>Best Rates: {data.top5_percents[4]}%</span>
+                    <a href={data.links[4]}>
+                        <h1><FaGreaterThan style={{fontSize: '50px', float: 'right', marginTop: '-90px'}}/></h1>
                     </a>
                 </div>
                 </div>
             </div>
-        </div>
+		</div>
     </>
 	)
 }

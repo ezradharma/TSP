@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 export default function MainPageNoAccount () {
 	return (
 		<div className='MainPageNoAccount_MainPageNoAccount'>
+			<Link to='/frontpage'>
 			<div className='Frame1'>
 				<div className='Rectangle31'/>
 				<div className='Rectangle32'/>
@@ -59,6 +60,7 @@ export default function MainPageNoAccount () {
 					<img className='Vector_7' src = {ImgAsset.MainPageNoAccount_Vector_7} />
 				</div>
 			</div>
+			</Link>
 			<img className='Rectangle19' src = {ImgAsset.MainPageNoAccount_Rectangle19} />
 			<div className='MenuIcon'>
 				<img className='Line1' src = {ImgAsset.MainPageNoAccount_Line1} />

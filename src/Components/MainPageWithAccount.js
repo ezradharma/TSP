@@ -9,50 +9,78 @@ export default function MainPageWithAccount () {
 			<div className='Rectangle40'/>
 			<span className='Recommendedforyou'>Recommended for you</span>
 			<div className='Frame1'>
-				<div className='Rectangle31'/>
-				<div className='Rectangle32'/>
-				<span className='BestRate2'>Best Rate 2%</span>
-				<span className='Gap'>Gap</span>
-				<div className='Rectangle34'/>
-				<div className='iconstarempty'>
-					<img className='Vector' src = {ImgAsset.MainPageWithAccount_Vector} />
-				</div>
-				<span className='HomeDepot'>Home Depot</span>
-				<div className='Rectangle33'/>
-				<div className='iconstarempty_1'>
-					<img className='Vector_1' src = {ImgAsset.MainPageWithAccount_Vector_1} />
-				</div>
-				<span className='Costco'>Costco</span>
-				<div className='Rectangle36'/>
-				<span className='Hotelscom'>Hotels.com</span>
-				<div className='Rectangle37'/>
-				<div className='iconstarempty_2'>
-					<img className='Vector_2' src = {ImgAsset.MainPageWithAccount_Vector_2} />
-				</div>
-				<span className='Target'>Target</span>
-				<div className='Rectangle38'/>
-				<div className='iconstarempty_3'>
-					<img className='Vector_3' src = {ImgAsset.MainPageWithAccount_Vector_3} />
-				</div>
-				<span className='Kohls'>Kohls</span>
-				<img className='Amazon1' src = {ImgAsset.MainPageWithAccount_Amazon1} />
-				<img className='Costco1' src = {ImgAsset.MainPageWithAccount_Costco1} />
-				<img className='HomeDepot1' src = {ImgAsset.MainPageWithAccount_HomeDepot1} />
-				<img className='GapLogo1' src = {ImgAsset.MainPageWithAccount_GapLogo1} />
-				<img className='Hotels1' src = {ImgAsset.MainPageWithAccount_Hotels1} />
-				<img className='Target21' src = {ImgAsset.MainPageWithAccount_Target21} />
-				<img className='KholsLogo1' src = {ImgAsset.MainPageWithAccount_KholsLogo1} />
-				<span className='Amazon'>Amazon</span>
-				<span className='BestRate3'>Best Rate 3%</span>
-				<Link to='/storeratepagewithaccount'>
-					<div className='Group3'>
-						<img className='Rectangle35' src = {ImgAsset.MainPageWithAccount_Rectangle35} />
-						<span className='Walmart'>Walmart</span>
+				<Link to='/TargetRatesPage'>
+					<div className='Target'>
+						<div className='Rectangle37'/>
+						<div className='iconstarempty'>
+							<img className='Vector' src = {ImgAsset.MainPageWithAccount_Vector} />
+						</div>
+						<span className='Target_1'>Target</span>
+						<img className='Target21' src = {ImgAsset.MainPageWithAccount_Target21} />
+					</div>
+				</Link>
+				<Link to='/WalmartRatesPage'>
+					<div className='Walmart'>
+						<div className='Rectangle37_1'/>
+						<span className='Walmart_1'>Walmart</span>
 						<img className='Walmart1' src = {ImgAsset.SearchWalmart_Walmart1} />
 						<span className='BestRate42'>Best Rate 4.2%</span>
 					</div>
 				</Link>
-				<span className='BestRate5'>Best Rate 5%</span>
+				<Link to='/HotelsComRatesPage'>
+					<div className='Hotels'>
+						<div className='Rectangle36'/>
+						<span className='BestRate3'>Best Rate 3%</span>
+						<span className='Hotelscom'>Hotels.com</span>
+						<img className='Hotels1' src = {ImgAsset.MainPageWithAccount_Hotels1} />
+					</div>
+				</Link>
+				<Link to='/KohlsRatesPage'>
+					<div className='Kohls'>
+						<div className='Rectangle38'/>
+						<div className='iconstarempty_1'>
+							<img className='Vector_1' src = {ImgAsset.MainPageWithAccount_Vector_1} />
+						</div>
+						<span className='Kohls_1'>Kohls</span>
+						<img className='KholsLogo1' src = {ImgAsset.MainPageWithAccount_KholsLogo1} />
+					</div>
+				</Link>
+				<Link to='/GapRatesPage'>
+					<div className='Gap'>
+						<div className='Rectangle32'/>
+						<span className='BestRate2'>Best Rate 2%</span>
+						<span className='Gap_1'>Gap</span>
+						<img className='GapLogo1' src = {ImgAsset.MainPageWithAccount_GapLogo1} />
+					</div>
+				</Link>
+				<Link to='/AmazonRatesPage'>
+					<div className='Amazon'>
+						<div className='Rectangle31'/>
+						<span className='BestRate5'>Best Rate 5%</span>
+						<span className='Amazon_1'>Amazon</span>
+						<img className='Amazon1' src = {ImgAsset.MainPageWithAccount_Amazon1} />
+					</div>
+				</Link>
+				<Link to='/CostcoRatesPage'>
+					<div className='Costco'>
+						<div className='Rectangle33'/>
+						<div className='iconstarempty_2'>
+							<img className='Vector_2' src = {ImgAsset.MainPageWithAccount_Vector_2} />
+						</div>
+						<span className='Costco_1'>Costco</span>
+						<img className='Costco1' src = {ImgAsset.MainPageWithAccount_Costco1} />
+					</div>
+				</Link>
+				<Link to='/HomeDepotRatesPage'>
+					<div className='HomeDepot'>
+						<div className='Rectangle34'/>
+						<div className='iconstarempty_3'>
+							<img className='Vector_3' src = {ImgAsset.MainPageWithAccount_Vector_3} />
+						</div>
+						<span className='HomeDepot_1'>Home Depot</span>
+						<img className='HomeDepot1' src = {ImgAsset.MainPageWithAccount_HomeDepot1} />
+					</div>
+				</Link>
 			</div>
 			<span className='YourFavorites'>Your Favorites</span>
 			<img className='Rectangle19' src = {ImgAsset.MainPageWithAccount_Rectangle19} />
