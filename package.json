@@ -1,8 +1,8 @@
 {
-  "homepage": "https://ezradharma.github.io/TSP",
+  "homepage": "https://ezradharma.github.io/TSP/",
   "name": "figact-react-template",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "proxy": "https://localhost:5000/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
