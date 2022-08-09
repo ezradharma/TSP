@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/TSP/static/css/main.1601d7dd.chunk.css",
+    "main.js": "/TSP/static/js/main.441656a3.chunk.js",
+    "main.js.map": "/TSP/static/js/main.441656a3.chunk.js.map",
+    "runtime-main.js": "/TSP/static/js/runtime-main.f871243e.js",
+    "runtime-main.js.map": "/TSP/static/js/runtime-main.f871243e.js.map",
+    "static/js/2.a0a812c7.chunk.js": "/TSP/static/js/2.a0a812c7.chunk.js",
+    "static/js/2.a0a812c7.chunk.js.map": "/TSP/static/js/2.a0a812c7.chunk.js.map",
+    "index.html": "/TSP/index.html",
+    "static/css/main.1601d7dd.chunk.css.map": "/TSP/static/css/main.1601d7dd.chunk.css.map",
+    "static/js/2.a0a812c7.chunk.js.LICENSE.txt": "/TSP/static/js/2.a0a812c7.chunk.js.LICENSE.txt",
+    "static/media/AmazonGraph.png": "/TSP/static/media/AmazonGraph.c495267b.png",
+    "static/media/CostcoGraph.png": "/TSP/static/media/CostcoGraph.8f0ba6db.png",
+    "static/media/FrontPage_TSP3.png": "/TSP/static/media/FrontPage_TSP3.48bf0f01.png",
+    "static/media/GapGraph.png": "/TSP/static/media/GapGraph.ee34403e.png",
+    "static/media/HomeDepotGraph.png": "/TSP/static/media/HomeDepotGraph.89b30a7e.png",
+    "static/media/HotelsComGraph.png": "/TSP/static/media/HotelsComGraph.31f04bd6.png",
+    "static/media/KohlsGraph.png": "/TSP/static/media/KohlsGraph.d0100f49.png",
+    "static/media/MainPageWithAccount_Amazon1.png": "/TSP/static/media/MainPageWithAccount_Amazon1.3f742453.png",
+    "static/media/MainPageWithAccount_Costco1.png": "/TSP/static/media/MainPageWithAccount_Costco1.a4d6aa53.png",
+    "static/media/MainPageWithAccount_GapLogo1.png": "/TSP/static/media/MainPageWithAccount_GapLogo1.8e8cccc9.png",
+    "static/media/MainPageWithAccount_HomeDepot1.png": "/TSP/static/media/MainPageWithAccount_HomeDepot1.95d35949.png",
+    "static/media/MainPageWithAccount_Hotels1.png": "/TSP/static/media/MainPageWithAccount_Hotels1.75a17323.png",
+    "static/media/MainPageWithAccount_KholsLogo1.png": "/TSP/static/media/MainPageWithAccount_KholsLogo1.6afd85a7.png",
+    "static/media/MainPageWithAccount_Target21.png": "/TSP/static/media/MainPageWithAccount_Target21.b332c099.png",
+    "static/media/SearchWalmart_Walmart1.png": "/TSP/static/media/SearchWalmart_Walmart1.35442a5d.png",
+    "static/media/StoreRateHistoricalPageWithAccount_ServiceLogo.png": "/TSP/static/media/StoreRateHistoricalPageWithAccount_ServiceLogo.96aaede9.png",
+    "static/media/StoreRateHistoricalPageWithAccount_ServiceLogo_1.png": "/TSP/static/media/StoreRateHistoricalPageWithAccount_ServiceLogo_1.ac28585e.png",
+    "static/media/StoreRateHistoricalPageWithAccount_ServiceLogo_3.png": "/TSP/static/media/StoreRateHistoricalPageWithAccount_ServiceLogo_3.8d51c4ee.png",
+    "static/media/StoreRateHistoricalPageWithAccount_StoreLogo.png": "/TSP/static/media/StoreRateHistoricalPageWithAccount_StoreLogo.59b07ad0.png",
+    "static/media/TargetGraph.png": "/TSP/static/media/TargetGraph.ba6ad439.png",
+    "static/media/WalmartGraph.png": "/TSP/static/media/WalmartGraph.f4e2c98b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f871243e.js",
+    "static/js/2.a0a812c7.chunk.js",
+    "static/css/main.1601d7dd.chunk.css",
+    "static/js/main.441656a3.chunk.js"
+  ]
+}
