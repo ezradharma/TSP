@@ -1,0 +1,94 @@
+body {background-color: rgba(0,104,213,255);}
+
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.tspsearch input[type=text] {
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.tspsearch button {
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: rgb(3, 187, 248);
+  color: black;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.tspsearch button:hover {
+  background: #0b7dda;
+}
+
+form.tspsearch::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+  h1 {
+    margin: auto;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    width: 50%;
+    border: 3px solid white;
+    padding: 20px;
+    }
+
+    .container {
+      overflow: hidden;
+    }
+    
+    .filterDiv {
+      float: left;
+      background-color: #2196F3;
+      color: #ffffff;
+      width: 100px;
+      line-height: 100px;
+      text-align: center;
+      margin: 2px;
+      display: none; /* Hidden by default */
+    }
+    
+    /* The "show" class is added to the filtered elements */
+    .show {
+      display: block;
+    }
+    
+    /* Style the buttons */
+    .btn {
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+    }
+    
+    /* Add a light grey background on mouse-over */
+    .btn:hover {
+      background-color: #ddd;
+    }
+    
+    /* Add a dark background to the active button */
+    .btn.active {
+      background-color: #666;
+      color: white;
+    }

@@ -7,8 +7,7 @@ import { FaGreaterThan } from "react-icons/fa";
 import {Link} from 'react-router-dom'
 
 export default function TestRatePage () {
-
-	const [data, setArr] = useState({
+    const [data, setArr] = useState({
         'top5_percents': '',
 		'top5_platforms': '',
         'percents': 5,
@@ -31,6 +30,36 @@ export default function TestRatePage () {
 			console.log(data)
 		});
 	}, []);
+
+    let info = [];
+    for (let i = 0; i < data.top5_percents.length; i++) {
+        info.push(<a href={data.links[i]}>
+            <div>
+                <img src={data.imgs[i]} />
+                <span>{data.top5_platforms[i]}</span><br />
+                <span>Best Rates: {data.top5_percents[i]}%</span>
+                    <h1><FaGreaterThan style={{fontSize: '50px', float: 'right', marginTop: '-90px', color: "blue"}}/></h1>
+            </div>
+            </a>)
+    }
+
+    let plat_info = [];
+    for (let i = 0; i < data.top5_platforms.length; i++) {
+        if (i === 4) {
+            plat_info.push(<span>{data.platforms[i]}</span>)
+        } else {
+            plat_info.push(<span>{data.platforms[i]}, </span>);
+        }
+    }
+
+    let perc_info = [];
+    for (let i = 0; i < data.top5_percents.length; i++) {
+        if (i === 4) {
+            perc_info.push(<span>{data.top5_percents[i]}%</span>)
+        } else {
+            perc_info.push(<span>{data.top5_percents[i]}%, </span>);
+        }
+    }
 
 	const option = {
 		xAxis: {
@@ -69,12 +98,9 @@ export default function TestRatePage () {
 				<div className='Group4'>
 					<div className='Rectangle21'/>
 					<span className='USERNAME'>[USERNAME]</span>
-					<Link to='/mainpagenoaccount'>
-						<span className='_'>|     Sign Out</span>
-					</Link>
 				</div>
 				<img className='TSP3' src = {ImgAsset.FrontPage_TSP3} />
-				<Link to='/mainpagewithaccount'>
+				<Link to='/MainPageV2'>
 					<div className='MenuIcon'>
 						<img className='Line1' src = {ImgAsset.SearchWalmart_Line1} />
 						<img className='Line2' src = {ImgAsset.SearchWalmart_Line2} />
@@ -84,73 +110,21 @@ export default function TestRatePage () {
 			</div>
             <div style={{marginTop: '100px', color: "white"}}>
                 <span>Reward Platforms w/ Highest Cashback Rates: </span>
-                <span id="plat1">{data.platforms[0]}</span>
-                <span>, </span>
-                <span id="plat2">{data.platforms[1]}</span>
-                <span>, </span>
-                <span id="plat3">{data.platforms[2]}</span>
-                <span>, </span>
-                <span id="plat4">{data.platforms[3]}</span>
-                <span>, </span>
-                <span id="plat5">{data.platforms[4]}</span>
+                {plat_info.map((record, i) => <span key={i}>{plat_info[i]}
+                </span>)}
                 <br></br>
                 <span>Highest Cashback Rates for Walmart: </span>
-                <span id="num1">{data.top5_percents[0]}</span>
-                <span>%, </span>
-                <span id="num2">{data.top5_percents[1]}</span>
-                <span>%, </span>
-                <span id="num3">{data.top5_percents[2]}</span>
-                <span>%, </span>
-                <span id="num4">{data.top5_percents[3]}</span>
-                <span>%, </span>
-                <span id="num5">{data.top5_percents[4]}</span><span>%</span>
+                {perc_info.map((record, i) => <span key={i}>{perc_info[i]}
+                </span>)}
             </div>
 			<ReactEcharts option={option} />
 			<div id="wrap">
             <div class="reward-plats container center">
-                <div>
-                <img src={data.imgs[0]} />
-                    <span>{data.top5_platforms[0]}</span><br />
-                    <span>Best Rates: {data.top5_percents[0]}%</span>
-                    <a href={data.links[0]}>
-                        <h1><FaGreaterThan style={{fontSize: '50px', float: 'right', marginTop: '-90px'}}/></h1>
-                    </a>
-                </div>
-                <div>
-                <img src={data.imgs[1]} />
-                    <span>{data.top5_platforms[1]}</span><br />
-                    <span>Best Rates: {data.top5_percents[1]}%</span>
-                    <a href={data.links[1]}>
-                        <h1><FaGreaterThan style={{fontSize: '50px', float: 'right', marginTop: '-90px'}}/></h1>
-                    </a>
-                </div>
-                <div>
-                <img src={data.imgs[2]} />
-                    <span>{data.top5_platforms[2]}</span><br />
-                    <span>Best Rates: {data.top5_percents[2]}%</span>
-                    <a href={data.links[2]}>
-                        <h1><FaGreaterThan style={{fontSize: '50px', float: 'right', marginTop: '-90px'}}/></h1>
-                    </a>
-                </div>
-                <div>
-                <img src={data.imgs[3]} />
-                    <span>{data.top5_platforms[3]}</span><br />
-                    <span>Best Rates: {data.top5_percents[3]}%</span>
-                    <a href={data.links[3]}>
-                        <h1><FaGreaterThan style={{fontSize: '50px', float: 'right', marginTop: '-90px'}}/></h1>
-                    </a>
-                    </div>
-                <div>
-                <img src={data.imgs[4]} />
-                    <span>{data.top5_platforms[4]}</span><br />
-                    <span>Best Rates: {data.top5_percents[4]}%</span>
-                    <a href={data.links[4]}>
-                        <h1><FaGreaterThan style={{fontSize: '50px', float: 'right', marginTop: '-90px'}}/></h1>
-                    </a>
-                </div>
-                </div>
+            {info.map((record, i) => <span key={i}>{info[i]}
+            </span>)}
             </div>
-		</div>
+        </div>
+	</div>
     </>
 	)
 }

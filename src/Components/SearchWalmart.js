@@ -31,12 +31,9 @@ export default function SearchWalmart () {
 				<div className='Group4'>
 					<div className='Rectangle21'/>
 					<span className='USERNAME'>[USERNAME]</span>
-					<Link to='/mainpagenoaccount'>
-						<span className='_'>|     Sign Out</span>
-					</Link>
 				</div>
 				<img className='TSP3' src = {ImgAsset.FrontPage_TSP3} />
-				<Link to='/mainpagewithaccount'>
+				<Link to='/MainPageV2'>
 					<div className='MenuIcon'>
 						<img className='Line1' src = {ImgAsset.SearchWalmart_Line1} />
 						<img className='Line2' src = {ImgAsset.SearchWalmart_Line2} />

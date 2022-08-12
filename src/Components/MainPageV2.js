@@ -11,17 +11,27 @@ export default function TestPage () {
     });
 
 	console.log('hopium')
-	useEffect(() => {
-        fetch("/home_data").then(res => res.json())
-		.then(data => {
-			console.log(data)
 
-			setArr({
-				'percents': data.percents,
-				'stores': data.stores
-			})
-		});
-	}, []);
+	const loadData = async () => {
+		const res = await fetch("/home_data");
+		setArr(await res.json());
+	  };
+
+	  useEffect(() => {
+		loadData();
+		return () => {};
+	  }, []);
+	// useEffect(() => {
+    //     fetch("/home_data").then(res => res.json())
+	// 	.then(data => {
+	// 		console.log(data)
+
+	// 		setArr({
+	// 			'percents': data.percents,
+	// 			'stores': data.stores
+	// 		})
+	// 	});
+	// }, []);
 
     return (
         <>
@@ -29,7 +39,7 @@ export default function TestPage () {
         	<div className='TopBar'>
 				<img className='Rectangle19' src = {ImgAsset.SearchWalmart_Rectangle19} />
 				<div className='Group1'>
-					<Link to='/undefined'>
+					<Link to='/SearchNavPage'>
 						<div className='SearchBarDesktop'>
 							<div className='Rectangle1'/>
 							<img className='Vector_1' src = {ImgAsset.SearchWalmart_Vector_1} />
@@ -44,12 +54,9 @@ export default function TestPage () {
 				<div className='Group4'>
 					<div className='Rectangle21'/>
 					<span className='USERNAME'>[USERNAME]</span>
-					<Link to='/mainpagenoaccount'>
-						<span className='_'>|     Sign Out</span>
-					</Link>
 				</div>
 				<img className='TSP3' src = {ImgAsset.FrontPage_TSP3} />
-				<Link to='/mainpagewithaccount'>
+				<Link to='/MainPageV2'>
 					<div className='MenuIcon'>
 						<img className='Line1' src = {ImgAsset.SearchWalmart_Line1} />
 						<img className='Line2' src = {ImgAsset.SearchWalmart_Line2} />
@@ -58,70 +65,70 @@ export default function TestPage () {
 				</Link>
 			</div>
 			<div id="main_stores" style={{color: "black"}}>
+				<Link to="/WalmartRatesPage">
 				<div>
-				<Link to='/WalmartRatesPage'>
 					<br/>
 					{data.stores[0]}
 					<br/>
 					Best Rate: {data.percents[0]}
-				</Link>
 				</div>
+				</Link>
+				<Link to="/AmazonRatesPage">
 				<div>
-				<Link to='/AmazonRatesPage'>
 					<br/>
 					{data.stores[1]}
 					<br/>
 					Best Rate: {data.percents[1]}
-				</Link>
 				</div>
+				</Link>
+				<Link to="/GapRatesPage">
 				<div>
-				<Link to='/GapRatesPage'>
 					<br/>
 					{data.stores[2]}
 					<br/>
 					Best Rate: {data.percents[2]}
-				</Link>
 				</div>
+				</Link>
+				<Link to="/HotelsComRatesPage">
 				<div>
-				<Link to='/HotelsComRatesPage'>
 					<br/>
 					{data.stores[3]}
 					<br/>
 					Best Rate: {data.percents[3]}
-				</Link>
 				</div>
+				</Link>
+				<Link to="/CostcoRatesPage">
 				<div>
-				<Link to='/CostcoRatesPage'>
 					<br/>
 					{data.stores[4]}
 					<br/>
 					Best Rate: {data.percents[4]}
-				</Link>
 				</div>
+				</Link>
+				<Link to="/KohlsRatesPage">
 				<div>
-				<Link to='/KohlsRatesPage'>
 					<br/>
 					{data.stores[5]}
 					<br/>
 					Best Rate: {data.percents[5]}
-				</Link>
 				</div>
+				</Link>
+				<Link to="/HomeDepotRatesPage">
 				<div>
-				<Link to='/HomeDepotRatesPage'>
 					<br/>
 					{data.stores[6]}
 					<br/>
 					Best Rate: {data.percents[6]}
-				</Link>
 				</div>
+				</Link>
+				<Link to="/TargetRatesPage">
 				<div>
-				<Link to='/TargetRatesPage'>
 					<br/>
 					{data.stores[7]}
 					<br/>
 					Best Rate: {data.percents[7]}
-				</Link>
 				</div>
+				</Link>
 			</div>
 		</div>
     </>
