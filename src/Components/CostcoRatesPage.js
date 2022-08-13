@@ -120,7 +120,7 @@ export default function CostcoRatePage () {
 					{plat_info.map((record, i) => <span key={i}>{plat_info[i]}
 					</span>)}
 					<br></br>
-					<span>Highest Cashback Rates for Walmart: </span>
+					<span>Highest Cashback Rates for Costco: </span>
 					{perc_info.map((record, i) => <span key={i}>{perc_info[i]}
 					</span>)}
 				</div>
