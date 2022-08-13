@@ -3,6 +3,8 @@ import './SearchWalmart.css'
 import './style.css'
 import ImgAsset from '../public'
 import {Link} from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.css';
+import Spinner from 'react-bootstrap/Spinner';
 
 export default function TestPage () {
 	const [data, setArr] = useState({
@@ -10,28 +12,30 @@ export default function TestPage () {
         'stores': ''
     });
 
+	const [spinner, setSpinner] = useState(false);
+
 	console.log('hopium')
 
-	const loadData = async () => {
-		const res = await fetch("/home_data");
-		setArr(await res.json());
-	  };
+	// const loadData = async () => {
+	// 	const res = await fetch("/home_data");
+	// 	setArr(await res.json());
+	//   };
 
-	  useEffect(() => {
-		loadData();
-		return () => {};
-	  }, []);
-	// useEffect(() => {
-    //     fetch("/home_data").then(res => res.json())
-	// 	.then(data => {
-	// 		console.log(data)
-
-	// 		setArr({
-	// 			'percents': data.percents,
-	// 			'stores': data.stores
-	// 		})
-	// 	});
-	// }, []);
+	//   useEffect(() => {
+	// 	loadData();
+	// 	return () => {};
+	//   }, []);
+	useEffect(() => {
+        fetch("/main_data").then(res => res.json())
+		.then(data => {
+			console.log(data)
+			setSpinner(true);
+			setArr({
+				'percents': data.percents,
+				'stores': data.stores
+			})
+		});
+	}, []);
 
     return (
         <>
@@ -45,7 +49,7 @@ export default function TestPage () {
 							<img className='Vector_1' src = {ImgAsset.SearchWalmart_Vector_1} />
 						</div>
 					</Link>
-					<Link to='/undefined'>
+					<Link to='/SearchNavPage'>
 						<div className='FilterDropdownListDesktop'>
 							<img className='Vector_2' src = {ImgAsset.SearchWalmart_Vector_2} />
 						</div>
@@ -64,7 +68,9 @@ export default function TestPage () {
 					</div>
 				</Link>
 			</div>
-			<div id="main_stores" style={{color: "black"}}>
+				{!spinner ? (
+				<Spinner animation="border" variant="primary" style={{textAlign: "center", marginRight: "auto", marginLeft: "auto", position: "relative", top: "15vh", left: "50vw"}}/>) : 
+				<div id="main_stores" style={{color: "black"}}>
 				<Link to="/WalmartRatesPage">
 				<div>
 					<br/>
@@ -97,7 +103,7 @@ export default function TestPage () {
 					Best Rate: {data.percents[3]}
 				</div>
 				</Link>
-				<Link to="/CostcoRatesPage">
+				{/* <Link to="/CostcoRatesPage">
 				<div>
 					<br/>
 					{data.stores[4]}
@@ -128,8 +134,9 @@ export default function TestPage () {
 					<br/>
 					Best Rate: {data.percents[7]}
 				</div>
-				</Link>
+				</Link> */}
 			</div>
+				}
 		</div>
     </>
 	)

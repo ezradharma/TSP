@@ -65,15 +65,13 @@ form.tspsearch::after {
       line-height: 100px;
       text-align: center;
       margin: 2px;
-      display: none; /* Hidden by default */
+      display: none;
     }
-    
-    /* The "show" class is added to the filtered elements */
+
     .show {
       display: block;
     }
-    
-    /* Style the buttons */
+
     .btn {
       border: none;
       outline: none;
@@ -81,13 +79,11 @@ form.tspsearch::after {
       background-color: #f1f1f1;
       cursor: pointer;
     }
-    
-    /* Add a light grey background on mouse-over */
+
     .btn:hover {
       background-color: #ddd;
     }
-    
-    /* Add a dark background to the active button */
+
     .btn.active {
       background-color: #666;
       color: white;

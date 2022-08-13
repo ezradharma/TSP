@@ -1,98 +1,98 @@
 import React, { useEffect, useState } from "react";
-import './SearchWalmart.css'
-import './style2.css'
-import ImgAsset from '../public'
 import {Link} from 'react-router-dom'
+import './SearchWalmart.css'
+import ImgAsset from '../public'
+import './style.css'
+import 'bootstrap/dist/css/bootstrap.css';
+import Spinner from 'react-bootstrap/Spinner';
 
-export default function SearchNavPage () {
-  filterSelection("all")
-  function filterSelection(c) {
-    var x, i;
-    x = document.getElementsByClassName("filterDiv");
-    if (c === "all") c = "";
-    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-    for (i = 0; i < x.length; i++) {
-      w3RemoveClass(x[i], "show");
-      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-    }
-  }
-  
-  // Show filtered elements
-  function w3AddClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      if (arr1.indexOf(arr2[i]) == -1) {
-        element.className += " " + arr2[i];
-      }
-    }
-  }
-  
-  // Hide elements that are not selected
-  function w3RemoveClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      while (arr1.indexOf(arr2[i]) > -1) {
-        arr1.splice(arr1.indexOf(arr2[i]), 1);
-      }
-    }
-    element.className = arr1.join(" ");
-  }
-
-  const [btn, setBtns] = useState([]);
-  
-  // Add active class to the current control button (highlight it)
-  var btnContainer = document.getElementById("myBtnContainer");
-  var btns = btnContainer.getElementsByClassName("btn");
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-      var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
+export default function App() {
+    const [data, setArr] = useState({
+        'percents': 5,
+        'stores': ''
     });
-  }
+
+    console.log('hopium')
+    const [spinner, setSpinner] = useState(false);
+
+    useEffect(() => {
+        fetch("/home_data").then(res => res.json())
+        .then(data => {
+          console.log(data)
+          setSpinner(true);
+          setArr({
+            'percents': data.percents,
+            'stores': data.stores
+          })
+        });
+    }, []);
+
+    let lnks = ['WalmartRatesPage', 'AmazonRatesPage', 'GapRatesPage', 'HotelsComRatesPage',
+  'CostcoRatesPage', 'KohlsRatesPage', 'HomeDepotRatesPage', 'TargetRatesPage', 'AppleRatesPage',
+  'BestBuyRatesPage'];
+    let itemList = [];
+    let percList = [];
+    for (let i = 0; i < data.stores.length; i++) {
+        itemList.push(data.stores[i]);
+        percList.push(data.percents[i]);
+    }
+
+  const [filteredList, setFilteredList] = new useState(itemList);
+  const [lnklist, setLnkList] = new useState(lnks);
+
+  const filterBySearch = (event) => {
+    // Access input value
+    const query = event.target.value;
+    // Create copy of item list
+    var updatedList = [...itemList];
+    var updatedLnks = [...lnks];
+    console.log(updatedList)
+    // Include all elements which includes the search query
+    updatedList = updatedList.filter((item) => {
+      return item.toLowerCase().indexOf(query.toLowerCase()) !== -1;
+    });
+    updatedLnks = updatedList.filter((item) => {
+      return item.toLowerCase().includes(item.toLowerCase()) !== -1;
+    });
+    // Trigger render with updated values
+    console.log(updatedList)
+    for (let i = 0; i < updatedList.length; i++) {
+      updatedLnks[i] += 'RatesPage';
+    }
+    console.log(updatedLnks);
+    setFilteredList(updatedList);
+    setLnkList(updatedLnks);
+  };
 
   return (
-    <>
-    <h1>
-      {/* <img src="images/TSP.JPG" alt="TSP Icon" /> */}
-      <br />
-      <br />
-
-      <form className="tspsearch" action="/action_page.php" style={{margin: "auto", maxWidth: "300px"}}>
-        <input type="text" placeholder="Search.." name="searchbar" />
-        <button type="submit"><i class="fa fa-search"></i></button>
-      </form>
-
-    </h1>
-    <form className="tspsearch" action="/action_page.php" style={{margin: "auto", maxWidth: "300px"}}>
-      <input type="text" placeholder="Search.." name="searchbar" />
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-
-    <br />
-    <br></br>
-    <div id="myBtnContainer">
-        <button className="btn active" onclick="filterSelection('all')"> Show all</button>
-        <button className="btn" onclick="filterSelection('Big Retail')">Big Retail</button>
-        <button className="btn" onclick="filterSelection('Clothing')"> Clothing</button>
-        <button className="btn" onclick="filterSelection('Home Repair')"> Home Repair</button>
-        <button className="btn" onclick="filterSelection('Travel')"> Travel</button>
-    </div>
-
-    <div className="container">
-      <div className="filterDiv Big Retail">Amazon</div>
-      <div className="filterDiv Big Retail">Costco</div>
-      <div className="filterDiv Big Retail">Walmart</div>
-      <div className="filterDiv Big Retails">Khols</div>
-      <div className="filterDiv Big Retail">Target</div>
-      <div className="filterDiv Home Repair">Home Depot</div>
-      <div className="filterDiv Travel">Hotels.com</div>
-      <div className="filterDiv Clothing">Gap</div>
-    </div>
+    !spinner ? (
+      <Spinner animation="border" variant="primary" style={{textAlign: "center", marginRight: "auto", marginLeft: "auto", position: "relative", top: "15vh", left: "50vw"}}/>) : <>
+      <div className='SearchWalmart_SearchWalmart'>
+			<div className='TopBar'>
+				<img className='Rectangle19' src = {ImgAsset.SearchWalmart_Rectangle19} />
+				<img className='TSP3' src = {ImgAsset.FrontPage_TSP3} />
+				<Link to='/MainPageV2'>
+					<div className='MenuIcon'>
+						<img className='Line1' src = {ImgAsset.SearchWalmart_Line1} />
+						<img className='Line2' src = {ImgAsset.SearchWalmart_Line2} />
+						<img className='Line3' src = {ImgAsset.SearchWalmart_Line3} />
+					</div>
+				</Link>
+			</div>
+      <div className="App" style={{position: "relative", textAlign: "center"}}>
+        <div className="search-header">
+          <input id="search-box" placeholder="Search.." style={{width: "50%", marginTop: "20px"}} onChange={filterBySearch} />
+        </div>
+				<div id="wrap">
+					<div class="reward-plats container center">
+          {filteredList.map((record, i) => <Link to={lnklist[i]}>
+            <div key={i} style={{color: "blue"}}>{record}
+            <br/>{percList[i]}
+					</div></Link>)}
+          </div>
+          </div>
+        </div>
+		</div>
     </>
   )
 }

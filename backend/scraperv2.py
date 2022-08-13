@@ -61,6 +61,7 @@ app = Flask(__name__)
 #     links = []
 #     top5_rates = []
 #     top5_stores = []
+#     imgs = []
 
 #     tbody = driver.find_element_by_css_selector('div.half.fl table tbody')
 
@@ -86,6 +87,8 @@ app = Flask(__name__)
 #         for cell3 in row.find_elements_by_tag_name('td.l.lo a'):
 #             # print(cell3.get_attribute('href'))
 #             links.append(cell3.get_attribute('href'))
+#         for cell4 in row.find_elements_by_tag_name('td.l.ro'):
+#             imgs.append(cell4.find_element_by_css_selector('a img').get_attribute("src"))
 
 #     x = len(rates)
 #     if x <= 5:
@@ -120,8 +123,161 @@ app = Flask(__name__)
 #         'top5_platforms': top5_stores,
 #         'percents': send_rates,
 #         'platforms': send_stores,
-#         'links': links
+#         'links': links,
+#         'imgs': imgs
 #     })
+
+@app.route('/rates/bestbuy')
+def ratepg9():
+    driver.implicitly_wait(0.25)
+    driver.get("https://www.cashbackmonitor.com/cashback-store/bestbuy")
+
+    rates = []
+    providers = []
+    links = []
+    imgs = []
+    top5_rates = []
+    top5_stores = []
+
+    tbody = driver.find_element_by_css_selector('div.half.fl table tbody')
+
+    for row in tbody.find_elements_by_tag_name('tr'):
+        if (row.text.find('%') != -1):
+            tmp = row.text.split("%")[0]
+            tmp = row.text.split("Up to")[0]
+            tmp = re.sub("[^A-Za-z]", "", tmp)
+            providers.append(tmp)
+        else: continue
+        # for cell in row.find_elements_by_css_selector('td.l.lo'):
+        #     print(cell.text)
+        #     providers.append(cell.text)
+        for cell2 in row.find_elements_by_css_selector('td.l a span'):
+            # print(cell2.text)
+            if (cell2.text.find('$') != -1):
+                if (cell2.text.find('%') != -1):
+                    tmp = cell2.text.split('%')[0]
+                    rates.append(tmp + '%')
+                else: continue
+            else:
+                rates.append(cell2.text)
+        for cell3 in row.find_elements_by_tag_name('td.l.lo a'):
+            # print(cell3.get_attribute('href'))
+            links.append(cell3.get_attribute('href'))
+        for cell4 in row.find_elements_by_tag_name('td.l.ro'):
+            imgs.append(cell4.find_element_by_css_selector('a img').get_attribute("src"))
+
+    x = len(rates)
+    if x <= 5:
+        for i in range(0, x):
+            tmp = rates[i].split("%")[0]
+            tmp = re.sub("[^\d.]", "", tmp)
+            top5_rates.append(tmp)
+            top5_stores.append(providers[i])
+        # for i in range(x, 5):
+        #     top5_rates.append('0')
+        #     top5_stores.append('Placeholder')
+        # for i in range(0, 5):
+        #     print(top5_stores[i])
+        #     print(top5_rates[i])
+    else:
+        for i in range(0, len(rates)):
+            tmp = rates[i].split("%")[0]
+            tmp = re.sub("[^\d.]", "", tmp)
+            top5_rates.append(tmp)
+            top5_stores.append(providers[i])
+            if (i == 4): break
+
+        for i in range(0, len(rates)):
+            print(top5_stores[i])
+            print(top5_rates[i])
+            if (i == 4): break
+
+    send_stores = providers
+    send_rates = rates
+    return jsonify({
+        'top5_percents': top5_rates,
+        'top5_platforms': top5_stores,
+        'percents': send_rates,
+        'platforms': send_stores,
+        'links': links,
+        'imgs': imgs
+    })
+
+@app.route('/rates/apple')
+def ratepg8():
+    driver.implicitly_wait(0.25)
+    driver.get("https://www.cashbackmonitor.com/cashback-store/applestore")
+
+    rates = []
+    providers = []
+    links = []
+    imgs = []
+    top5_rates = []
+    top5_stores = []
+
+    tbody = driver.find_element_by_css_selector('div.half.fl table tbody')
+
+    for row in tbody.find_elements_by_tag_name('tr'):
+        if (row.text.find('%') != -1):
+            tmp = row.text.split("%")[0]
+            tmp = row.text.split("Up to")[0]
+            tmp = re.sub("[^A-Za-z]", "", tmp)
+            providers.append(tmp)
+        else: continue
+        # for cell in row.find_elements_by_css_selector('td.l.lo'):
+        #     print(cell.text)
+        #     providers.append(cell.text)
+        for cell2 in row.find_elements_by_css_selector('td.l a span'):
+            # print(cell2.text)
+            if (cell2.text.find('$') != -1):
+                if (cell2.text.find('%') != -1):
+                    tmp = cell2.text.split('%')[0]
+                    rates.append(tmp + '%')
+                else: continue
+            else:
+                rates.append(cell2.text)
+        for cell3 in row.find_elements_by_tag_name('td.l.lo a'):
+            # print(cell3.get_attribute('href'))
+            links.append(cell3.get_attribute('href'))
+        for cell4 in row.find_elements_by_tag_name('td.l.ro'):
+            imgs.append(cell4.find_element_by_css_selector('a img').get_attribute("src"))
+
+    x = len(rates)
+    if x <= 5:
+        for i in range(0, x):
+            tmp = rates[i].split("%")[0]
+            tmp = re.sub("[^\d.]", "", tmp)
+            top5_rates.append(tmp)
+            top5_stores.append(providers[i])
+        # for i in range(x, 5):
+        #     top5_rates.append('0')
+        #     top5_stores.append('Placeholder')
+        # for i in range(0, 5):
+        #     print(top5_stores[i])
+        #     print(top5_rates[i])
+    else:
+        for i in range(0, len(rates)):
+            tmp = rates[i].split("%")[0]
+            tmp = re.sub("[^\d.]", "", tmp)
+            top5_rates.append(tmp)
+            top5_stores.append(providers[i])
+            if (i == 4): break
+
+        for i in range(0, len(rates)):
+            print(top5_stores[i])
+            print(top5_rates[i])
+            if (i == 4): break
+
+    send_stores = providers
+    send_rates = rates
+    return jsonify({
+        'top5_percents': top5_rates,
+        'top5_platforms': top5_stores,
+        'percents': send_rates,
+        'platforms': send_stores,
+        'links': links,
+        'imgs': imgs
+    })
 
 @app.route('/rates/target')
 def ratepg7():
@@ -734,42 +890,7 @@ def ratepg0():
 
 @app.route('/main_data')
 def main_data():
-    driver.implicitly_wait(0.25)
-    driver.get("https://www.cashbackmonitor.com/")
-
-    rates = []
-    providers = []
-
-    rate_box = driver.find_element_by_css_selector('div.fl div.fl table.cbm2 tbody')
-
-    for item in rate_box.find_elements_by_css_selector('tr'):
-        if (item.text.find('%') != -1):
-            tmp = item.text.split("%")[0]
-            tmp = re.sub("[^A-Za-z]", "", tmp)
-            providers.append(tmp)
-        else: continue
-        # for cell in item.find_elements_by_css_selector('td.l'):
-        #     # print(cell.text)
-        #     providers.append(cell.text)
-        for cell2 in item.find_elements_by_css_selector('td:nth-child(3) a'):
-            # print(cell2.text)
-            if (cell2.text.find('%') != -1):
-                tmp = cell2.text.split("%")[0]
-                rates.append(tmp + '%')
-            else: continue
-
-    send_stores = providers
-    send_rates = rates
-    return jsonify({
-        'ok': True,
-        'msg': 'Success',
-        'percents': send_rates,
-        'stores': send_stores
-    })
-
-@app.route('/home_data')
-def home_data():
-    driver.implicitly_wait(0.25)
+    driver.implicitly_wait(0.15)
     driver.get("https://www.cashbackmonitor.com/cashback-store/walmart")
 
     rates_tmp = []
@@ -782,7 +903,7 @@ def home_data():
     for row in tbody.find_elements_by_tag_name('tr'):
         for cell2 in row.find_elements_by_css_selector('td.l a span'):
             if (len(rates_tmp) >= 1): break
-            print(cell2.text)
+            # print(cell2.text)
             rates_tmp.append(cell2.text)
             providers_tmp.append('Walmart')
 
@@ -827,7 +948,83 @@ def home_data():
     for row in tbody.find_elements_by_tag_name('tr'):
         for cell2 in row.find_elements_by_css_selector('td.l a span'):
             if (len(rates_tmp) >= 1): break
+            # # print(cell2.text)
+            rates_tmp.append(cell2.text)
+            providers_tmp.append('Hotels.com')
+
+    rates.append(rates_tmp[0])
+    providers.append(providers_tmp[0])
+    rates_tmp = []
+    providers_tmp = []
+
+    send_stores = providers
+    send_rates = rates
+    return jsonify({
+        'percents': send_rates,
+        'stores': send_stores,
+    })
+
+@app.route('/home_data')
+def home_data():
+    driver.implicitly_wait(0.15)
+    driver.get("https://www.cashbackmonitor.com/cashback-store/walmart")
+
+    rates_tmp = []
+    providers_tmp = []
+    rates = []
+    providers = []
+
+    tbody = driver.find_element_by_css_selector('div.half.fl table tbody')
+
+    for row in tbody.find_elements_by_tag_name('tr'):
+        for cell2 in row.find_elements_by_css_selector('td.l a span'):
+            if (len(rates_tmp) >= 1): break
             # print(cell2.text)
+            rates_tmp.append(cell2.text)
+            providers_tmp.append('Walmart')
+
+    rates.append(rates_tmp[0])
+    providers.append(providers_tmp[0])
+    rates_tmp = []
+    providers_tmp = []
+
+    driver.get("https://www.cashbackmonitor.com/cashback-store/amazon")
+    tbody = driver.find_element_by_css_selector('div.half.fl table tbody')
+
+    for row in tbody.find_elements_by_tag_name('tr'):
+        for cell2 in row.find_elements_by_css_selector('td.l a span'):
+            if (len(rates_tmp) >= 1): break
+            # print(cell2.text)
+            rates_tmp.append(cell2.text)
+            providers_tmp.append('Amazon')
+            
+    rates.append(rates_tmp[0])
+    providers.append(providers_tmp[0])
+    rates_tmp = []
+    providers_tmp = []
+
+    driver.get("https://www.cashbackmonitor.com/cashback-store/gap")
+    tbody = driver.find_element_by_css_selector('div.half.fl table tbody')
+
+    for row in tbody.find_elements_by_tag_name('tr'):
+        for cell2 in row.find_elements_by_css_selector('td.l a span'):
+            if (len(rates_tmp) >= 1): break
+            # print(cell2.text)
+            rates_tmp.append(cell2.text)
+            providers_tmp.append('Gap')
+
+    rates.append(rates_tmp[0])
+    providers.append(providers_tmp[0])
+    rates_tmp = []
+    providers_tmp = []
+
+    driver.get("https://www.cashbackmonitor.com/cashback-store/hotels.com")
+    tbody = driver.find_element_by_css_selector('div.half.fl table tbody')
+
+    for row in tbody.find_elements_by_tag_name('tr'):
+        for cell2 in row.find_elements_by_css_selector('td.l a span'):
+            if (len(rates_tmp) >= 1): break
+            # # print(cell2.text)
             rates_tmp.append(cell2.text)
             providers_tmp.append('Hotels.com')
 
@@ -874,7 +1071,7 @@ def home_data():
             if (len(rates_tmp) >= 1): break
             # print(cell2.text)
             rates_tmp.append(cell2.text)
-            providers_tmp.append('Home Depot')
+            providers_tmp.append('HomeDepot')
             
     rates.append(rates_tmp[0])
     providers.append(providers_tmp[0])
@@ -890,6 +1087,36 @@ def home_data():
             # print(cell2.text)
             rates_tmp.append(cell2.text)
             providers_tmp.append('Target')
+
+    rates.append(rates_tmp[0])
+    providers.append(providers_tmp[0])
+    rates_tmp = []
+    providers_tmp = []
+
+    driver.get("https://www.cashbackmonitor.com/cashback-store/applestore")
+    tbody = driver.find_element_by_css_selector('div.half.fl table tbody')
+
+    for row in tbody.find_elements_by_tag_name('tr'):
+        for cell2 in row.find_elements_by_css_selector('td.l a span'):
+            if (len(rates_tmp) >= 1): break
+            # print(cell2.text)
+            rates_tmp.append(cell2.text)
+            providers_tmp.append('Apple')
+
+    rates.append(rates_tmp[0])
+    providers.append(providers_tmp[0])
+    rates_tmp = []
+    providers_tmp = []
+
+    driver.get("https://www.cashbackmonitor.com/cashback-store/bestbuy")
+    tbody = driver.find_element_by_css_selector('div.half.fl table tbody')
+
+    for row in tbody.find_elements_by_tag_name('tr'):
+        for cell2 in row.find_elements_by_css_selector('td.l a span'):
+            if (len(rates_tmp) >= 1): break
+            # print(cell2.text)
+            rates_tmp.append(cell2.text)
+            providers_tmp.append('BestBuy')
 
     rates.append(rates_tmp[0])
     providers.append(providers_tmp[0])

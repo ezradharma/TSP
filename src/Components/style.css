@@ -61,6 +61,10 @@
     margin: 1%;
 }
 
+a {
+    text-decoration: none!important;
+}
+
 .reward-plats span {
     margin-bottom: 20px;
 }

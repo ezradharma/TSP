@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.css';
 import Spinner from 'react-bootstrap/Spinner';
 
-export default function HomeDepotRatePage () {
+export default function BestBuyRatePage () {
     const [data, setArr] = useState({
         'top5_percents': '',
 		'top5_platforms': '',
@@ -21,7 +21,7 @@ export default function HomeDepotRatePage () {
 	const [spinner, setSpinner] = useState(false);
 
 	useEffect(() => {
-        fetch("/rates/homedepot").then(res => res.json())
+        fetch("/rates/bestbuy").then(res => res.json())
 		.then(data => {
 			setSpinner(true)
 			setArr({
@@ -120,7 +120,7 @@ export default function HomeDepotRatePage () {
 					{plat_info.map((record, i) => <span key={i}>{plat_info[i]}
 					</span>)}
 					<br></br>
-					<span>Highest Cashback Rates for Home Depot: </span>
+					<span>Highest Cashback Rates for Best Buy: </span>
 					{perc_info.map((record, i) => <span key={i}>{perc_info[i]}
 					</span>)}
 				</div>

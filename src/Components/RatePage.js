@@ -5,9 +5,12 @@ import ImgAsset from '../public'
 import ReactEcharts from "echarts-for-react"
 import { FaGreaterThan } from "react-icons/fa";
 import {Link} from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.css';
+import Spinner from 'react-bootstrap/Spinner';
 
-export default function TestRatePage () {
-    const [data, setArr] = useState({
+export default function WalmartRatePage () {
+
+	const [data, setArr] = useState({
         'top5_percents': '',
 		'top5_platforms': '',
         'percents': 5,
@@ -16,9 +19,12 @@ export default function TestRatePage () {
         'imgs': ''
     });
 
+	const [spinner, setSpinner] = useState(false);
+
 	useEffect(() => {
-        fetch("/rates/walmart").then(res => res.json())
+        fetch("/rates/<store>").then(res => res.json())
 		.then(data => {
+			setSpinner(true)
 			setArr({
                 'top5_percents': data.top5_percents,
 				'top5_platforms': data.top5_platforms,
@@ -38,14 +44,14 @@ export default function TestRatePage () {
                 <img src={data.imgs[i]} />
                 <span>{data.top5_platforms[i]}</span><br />
                 <span>Best Rates: {data.top5_percents[i]}%</span>
-                    <h1><FaGreaterThan style={{fontSize: '50px', float: 'right', marginTop: '-90px', color: "blue"}}/></h1>
+                    <h2><FaGreaterThan style={{fontSize: '50px', float: 'right', marginTop: '-75px', color: "blue"}}/></h2>
             </div>
             </a>)
     }
 
     let plat_info = [];
     for (let i = 0; i < data.top5_platforms.length; i++) {
-        if (i === 4) {
+        if (i === data.top5_platforms.length - 1) {
             plat_info.push(<span>{data.platforms[i]}</span>)
         } else {
             plat_info.push(<span>{data.platforms[i]}, </span>);
@@ -54,7 +60,7 @@ export default function TestRatePage () {
 
     let perc_info = [];
     for (let i = 0; i < data.top5_percents.length; i++) {
-        if (i === 4) {
+        if (i === data.top5_percents.length - 1) {
             perc_info.push(<span>{data.top5_percents[i]}%</span>)
         } else {
             perc_info.push(<span>{data.top5_percents[i]}%, </span>);
@@ -83,13 +89,13 @@ export default function TestRatePage () {
         	<div className='TopBar'>
 				<img className='Rectangle19' src = {ImgAsset.SearchWalmart_Rectangle19} />
 				<div className='Group1'>
-					<Link to='/undefined'>
+					<Link to='/SearchNavPage'>
 						<div className='SearchBarDesktop'>
 							<div className='Rectangle1'/>
 							<img className='Vector_1' src = {ImgAsset.SearchWalmart_Vector_1} />
 						</div>
 					</Link>
-					<Link to='/undefined'>
+					<Link to='/SearchNavPage'>
 						<div className='FilterDropdownListDesktop'>
 							<img className='Vector_2' src = {ImgAsset.SearchWalmart_Vector_2} />
 						</div>
@@ -108,22 +114,25 @@ export default function TestRatePage () {
 					</div>
 				</Link>
 			</div>
-            <div style={{marginTop: '100px', color: "white"}}>
-                <span>Reward Platforms w/ Highest Cashback Rates: </span>
-                {plat_info.map((record, i) => <span key={i}>{plat_info[i]}
-                </span>)}
-                <br></br>
-                <span>Highest Cashback Rates for Walmart: </span>
-                {perc_info.map((record, i) => <span key={i}>{perc_info[i]}
-                </span>)}
-            </div>
-			<ReactEcharts option={option} />
-			<div id="wrap">
-            <div class="reward-plats container center">
-            {info.map((record, i) => <span key={i}>{info[i]}
-            </span>)}
-            </div>
-        </div>
+			{!spinner ? (
+				<Spinner animation="border" variant="primary" style={{textAlign: "center", marginRight: "auto", marginLeft: "auto", position: "relative", top: "15vh", left: "50vw"}}/>) : <>
+				<div style={{marginTop: '100px', color: "white"}}>
+					<span>Reward Platforms w/ Highest Cashback Rates: </span>
+					{plat_info.map((record, i) => <span key={i}>{plat_info[i]}
+					</span>)}
+					<br></br>
+					<span>Highest Cashback Rates for Walmart: </span>
+					{perc_info.map((record, i) => <span key={i}>{perc_info[i]}
+					</span>)}
+				</div>
+				<ReactEcharts option={option} />
+				<div id="wrap">
+					<div class="reward-plats container center">
+					{info.map((record, i) => <span key={i}>{info[i]}
+					</span>)}
+					</div>
+				</div>
+			</>}
 	</div>
     </>
 	)
