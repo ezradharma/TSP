@@ -72,12 +72,12 @@ export default function App() {
       <div className='SearchWalmart_SearchWalmart'>
 			<div className='TopBar'>
 				<img className='Rectangle19' src = {ImgAsset.SearchWalmart_Rectangle19} />
-				<img className='TSP3' src = {ImgAsset.FrontPage_TSP3} />
+        <Link to='/MainPageV2'>
+				    <img className='TSP3' src = {ImgAsset.FrontPage_TSP3} />
+        </Link>
 				<Link to='/MainPageV2'>
 					<div className='MenuIcon'>
-						<img className='Line1' src = {ImgAsset.SearchWalmart_Line1} />
-						<img className='Line2' src = {ImgAsset.SearchWalmart_Line2} />
-						<img className='Line3' src = {ImgAsset.SearchWalmart_Line3} />
+              <img className='HomeIcon' src = {ImgAsset.HomeButton} />
 					</div>
 				</Link>
 			</div>

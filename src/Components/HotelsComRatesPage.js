@@ -85,7 +85,7 @@ export default function HotelsComRatePage () {
     return (
         <>
 		<div className='SearchWalmart_SearchWalmart'>
-        	<div className='TopBar'>
+		<div className='TopBar'>
 				<img className='Rectangle19' src = {ImgAsset.SearchWalmart_Rectangle19} />
 				<div className='Group1'>
 					<Link to='/SearchNavPage'>
@@ -100,16 +100,13 @@ export default function HotelsComRatePage () {
 						</div>
 					</Link>
 				</div>
-				<div className='Group4'>
-					<div className='Rectangle21'/>
-					<span className='USERNAME'>[USERNAME]</span>
-				</div>
-				<img className='TSP3' src = {ImgAsset.FrontPage_TSP3} />
+				<Link to='/MainPageV2'>
+					<img className='TSP3' src = {ImgAsset.FrontPage_TSP3} />
+				</Link>
 				<Link to='/MainPageV2'>
 					<div className='MenuIcon'>
-						<img className='Line1' src = {ImgAsset.SearchWalmart_Line1} />
-						<img className='Line2' src = {ImgAsset.SearchWalmart_Line2} />
-						<img className='Line3' src = {ImgAsset.SearchWalmart_Line3} />
+						<img className='HomeIcon' src = {ImgAsset.HomeButton} />
+
 					</div>
 				</Link>
 			</div>

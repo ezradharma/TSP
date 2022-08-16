@@ -215,4 +215,5 @@ export default {
 	AmazonGraph: require('./AmazonGraph.png').default,
 	TargetGraph: require('./TargetGraph.png').default,
 	CostcoGraph: require('./CostcoGraph.png').default,
+	HomeButton: require('./home-button-icon.png').default,
 }
