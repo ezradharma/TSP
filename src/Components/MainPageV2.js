@@ -16,15 +16,6 @@ export default function TestPage () {
 
 	console.log('hopium')
 
-	// const loadData = async () => {
-	// 	const res = await fetch("/home_data");
-	// 	setArr(await res.json());
-	//   };
-
-	//   useEffect(() => {
-	// 	loadData();
-	// 	return () => {};
-	//   }, []);
 	useEffect(() => {
         fetch("/main_data").then(res => res.json())
 		.then(data => {

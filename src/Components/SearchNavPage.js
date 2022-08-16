@@ -57,7 +57,9 @@ export default function App() {
     // Trigger render with updated values
     console.log(updatedList)
     for (let i = 0; i < updatedList.length; i++) {
+      updatedLnks[i] = updatedLnks[i].split('.').join("");
       updatedLnks[i] += 'RatesPage';
+      console.log(updatedLnks[i])
     }
     console.log(updatedLnks);
     setFilteredList(updatedList);
