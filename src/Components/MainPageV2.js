@@ -62,6 +62,7 @@ export default function TestPage () {
 				<img className='TSP3' src = {ImgAsset.FrontPage_TSP3} />
 				<Link to='/MainPageV2'>
 					<div className='MenuIcon'>
+						<img className='HomeIcon' src = {ImgAsset.HomeButton} />
 						<img className='Line1' src = {ImgAsset.SearchWalmart_Line1} />
 						<img className='Line2' src = {ImgAsset.SearchWalmart_Line2} />
 						<img className='Line3' src = {ImgAsset.SearchWalmart_Line3} />
