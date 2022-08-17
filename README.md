@@ -1,70 +1,26 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To get started with TSP, you will need to download the necessary files.
+So to start you need to first change the directory where you are currently are until you cd into TSP-main, which is located under the TSP-main-final folder/directory. In which case you start in the TSP-final directory/folder. Then you cd TSP-main-final and then cd TSP-main
+to get to the source code where will you run the application.
 
-## Available Scripts
+Afterwards you will need to enter npm install --force in the terminal
+to install the necessary dependencies and files for your node_module so
+that our react application will run appropiately once you run it to your local host.
 
-In the project directory, you can run:
+Then this is optional but not needed, you can enter npm audit fix or npm audit fix --force in the terminal to fix some of the vulnerabilities after setting up the node modules.
 
-### `npm start`
+Once you have the node modules set up, make your terminal a split terminal inside an IDE like VSCode where we built and practice our application.
+The terminal that is already in the TSP-main directory can stay the way it is for now but for the other terminal, you will need to cd TSP-main-final then cd TSP-main then cd backend to the backend directory so that you can run the backend code for the site to utilize in order to display the cashback rates and stores that it contains.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+So once you have the other terminal in the backend directory thats within the TSP-main directory, run the command, python scraperv2.py. Then afterwards on the other terminal which should still be in the TSP-main directory, run npm start and wait for several seconds before it loads up the site in your local host.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Then the page will display start the test, click on that and after a few seconds you will be introduced to the main page of our site and it display 4 popular stores for you to view the cashback rates along with a header containing a logo, search bar and home button icon.
 
-### `npm test`
+If you click on the boxes containing the best cashback rates for that particular store along with the name of the store, the site will redirect you to the corresponding rates page where it will display the cashback rates offered by many reward platforms such as Ibotta along with a bar chart. Inside these rate pages you can choose to click on any of the rate boxes that these reward platforms offer and it will redirect you to the corresponding reward platform site that offers these cashback rates.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+If you happen to click on the logo or home button icon, it will redirct you to the main page of the website.
 
-### `npm run build`
+If you happen to click on the search bar in the main page of rates page it will redirect you to the search navigational page where you can search any stores that exists in our website which will display the stores accordingly to your input and if the store does not exists, it displays a non redirectable box that says like "this store does not exist, please enter again".
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This is the general instructions to set up, compile and execute our application.
