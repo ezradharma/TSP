@@ -8,6 +8,21 @@ import {Link} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.css';
 import Spinner from 'react-bootstrap/Spinner';
 
+/*
+File: WalmartRatesPage.js
+GUI II Project: The Saving Portal
+Tim Truong, UMass Lowell Computer Science, tim_truong1@student.uml.edu
+Copyright (c) 2022 by Tim Truong, Ezra Dharma, and Wesley Gallo.
+All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+Updated on 8/16/22 at 4:50pm.
+Instructor: Professor Wenjin Zhou
+Brief Overview: A Cashback monitoring system that automatically scans the best cashback rates
+and display it to the users in order to help them save money and get some cashback
+from each purchase during these times of financial crisis where theres a recession going and that
+saving money is critical during these times
+*/
+
 export default function WalmartRatePage () {
 
 	const [data, setArr] = useState({
